@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="80" id="pt.g27tfc.app" version="2.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>OZ</name>
-    <description>OZ</description>
+    <name>TFC</name>
+    <description>TFC</description>
     <author email="comercial@memogadget.com" href="http://www.memogadget.com/">Memogadget</author>
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="pgb-builder-version" value="1" />
