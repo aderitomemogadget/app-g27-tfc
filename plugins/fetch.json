@@ -1,0 +1,21 @@
+{
+  "cordova-plugin-wkwebview-engine": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/apache/cordova-plugin-wkwebview-engine.git#master"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ios-location-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "git+https://github.com/niconaso/cordova-plugin-ios-location-permissions.git"
+    },
+    "is_top_level": true,
+    "variables": {
+      "LOCATION_WHEN_IN_USAGE_DESCRIPTION": "A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos",
+      "LOCATION_ALWAYS_AND_WHEN_IN_USAGE_DESCRIPTION": "A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-plugin-ios-location-permissions" version="1.2.0" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>iOS Permissions</name>
+    <author>Nicolás Naso</author>
+    <description>Cordova / PhoneGap Plugin Permission Settings for NSLocationWhenInUseUsageDescription and NSLocationAlwaysAndWhenInUseUsageDescription in iOS 11 by adding a declaration to the Info.plist file</description>
+    <keywords>cordova, ios, app, security, permissions, NSLocationWhenInUseUsageDescription, NSLocationAlwaysAndWhenInUseUsageDescription</keywords>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <platform name="ios"> 
+        <preference name="LOCATION_WHEN_IN_USAGE_DESCRIPTION" default="A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos"/>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>$LOCATION_WHEN_IN_USAGE_DESCRIPTION</string>
+        </config-file>
+
+        <preference name="LOCATION_ALWAYS_AND_WHEN_IN_USAGE_DESCRIPTION" default="A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos"/>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>$LOCATION_ALWAYS_AND_WHEN_IN_USAGE_DESCRIPTION</string>
+        </config-file>
+
+        <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos"/>
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription ">
+            <string>$LOCATION_ALWAYS_USAGE_DESCRIPTION</string>
+        </config-file>
+    </platform>
+</plugin>

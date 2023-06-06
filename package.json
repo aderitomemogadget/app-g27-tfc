@@ -1,0 +1,32 @@
+{
+  "name": "g27",
+  "version": "1.4.4",
+  "description": "g27 app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "memogadget",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aderitomemogadget/g27-ios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aderitomemogadget/g27-ios/issues"
+  },
+  "homepage": "https://github.com/aderitomemogadget/g27-ios#readme",
+  "dependencies": {
+    "cordova-plugin-ios-location-permissions": "git+https://github.com/niconaso/cordova-plugin-ios-location-permissions.git",
+    "cordova-plugin-wkwebview-engine": "git+https://github.com/apache/cordova-plugin-wkwebview-engine.git#master"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-wkwebview-engine": {},
+      "cordova-plugin-ios-location-permissions": {
+        "LOCATION_WHEN_IN_USAGE_DESCRIPTION": "need location access to find things nearby",
+        "LOCATION_ALWAYS_AND_WHEN_IN_USAGE_DESCRIPTION": "need location access to find things nearby"
+      }
+    }
+  }
+}

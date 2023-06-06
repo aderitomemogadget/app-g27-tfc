@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="80" id="pt.g27tfc.app" version="2.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>OZ</name>
+    <description>OZ</description>
+    <author email="comercial@memogadget.com" href="http://www.memogadget.com/">Memogadget</author>
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="pgb-builder-version" value="1" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="android-targetSdkVersion" value="33" />
+    <preference name="android-build-tool" value="gradle" />
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <preference name="UseSwiftLanguageVersion" value="4.0" />
+    <preference name="SwiftVersion" value="5.0" />
+    <preference name="Hostname" value="app" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="EnableViewportScale" value="true" />
+    <preference name="androididPersistentFileLocation" value="Compatibility" />
+    <preference name="deployment-target" value="14" />
+    <preference name="permissions" value="INTERNET" />
+    <preference name="permissions" value="ACCESS_FINE_LOCATION" />
+    <preference name="permissions" value="CALL_PHONE" />
+    <preference name="InAppBrowserStorageEnabled" value="true" />
+    <preference name="AndroidXEnabled" value="true" />
+    <feature name="http://api.phonegap.com/1.0/network" />
+    <plugin name="cordova-plugin-network-information" source="npm" />
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <!--plugin name="cordova-plugin-wkwebview-engine" source="npm" spec="^1.2.1"/-->
+	<plugin name="cordova-plugin-wkwebview-engine" source="npm"/>
+    <plugin name="com.lampa.startapp" source="npm" />
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/geolocation" />
+    <plugin name="cordova-plugin-globalization" source="npm" />
+    <plugin name="cordova-plugin-geolocation" source="npm" />
+    <plugin name="cordova-plugin-dialogs" source="npm" />
+    <!--plugin name="cordova-plugin-device" source="npm" /-->
+    <plugin name="cordova-plugin-x-toast" source="npm" />
+    <!--plugin name="cordova-plugin-bring-to-front" source="npm" /-->
+    <!--plugin name="cordova-plugin-sim" source="npm" /-->
+    <!--plugin name="cordova-open-native-settings" source="npm" /-->
+    <plugin name="cordova-plugin-file" source="npm" />
+    <!--plugin name="cordova-plugin-fingerprint-aio" source="npm" spec="1.7.0" /-->
+    <plugin name="cordova-plugin-fingerprint-aio" source="npm" />
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" >
+        <variable name="GOOGLE_API_KEY_FOR_ANDROID" value="{AIzaSyDuPw9O-z98eEOxzciSIdfxbMjQZ4nvKn0}" />
+    </plugin>
+    <plugin name="cordova-plugin-inappbrowser" source="npm" />
+    <plugin name="cordova-plugin-advanced-http" source="npm" />
+    <plugin name="cordova-plugin-ios-location-permissions" source="npm" />
+    <plugin name="cordova-plugin-local-notification-12" source="npm" />
+    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+    <plugin name="cordova-sqlite-evcore-extbuild-free" source="npm" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="setAllowFileAccessFromFileURLs" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="SuppressesLongPressGesture" value="true" />
+    <preference name="Suppresses3DTouchGesture" value="true" />
+
+    <platform name="android">
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />        
+    	
+        <gap:config-file platform="android" parent="/manifest"><application android:hardwareAccelerated="true" /></gap:config-file>
+
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
+           <application android:exported="true" />
+        </edit-config>
+
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.CALL_PHONE" />
+        </config-file>
+
+        <feature name="NetworkStatus">
+            <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+        </feature>
+        <preference name="Scheme" value="https" />
+        <preference name="ResolveServiceWorkerRequests" value="true" />
+
+        <icon qualifier="xxxhdpi" src="resources/icons/android/drawable-xxxhdpi-icon.png" />
+        <icon qualifier="xxhdpi" src="resources/icons/android/drawable-xxhdpi-icon.png" />
+        <icon qualifier="xhdpi" src="resources/icons/android/drawable-xhdpi-icon.png" />
+        <icon qualifier="hdpi" src="resources/icons/android/drawable-hdpi-icon.png" />
+        <icon qualifier="mdpi" src="resources/icons/android/drawable-mdpi-icon.png" />
+        <icon qualifier="ldpi" src="resources/icons/android/drawable-ldpi-icon.png" />
+        <splash qualifier="land-ldpi" src="resources/screens/android/drawable-land-ldpi-screen.png" />
+        <splash qualifier="land-mdpi" src="resources/screens/android/drawable-land-mdpi-screen.png" />
+        <splash qualifier="land-hdpi" src="resources/screens/android/drawable-land-hdpi-screen.png" />
+        <splash qualifier="land-xhdpi" src="resources/screens/android/drawable-land-xhdpi-screen.png" />
+        <splash qualifier="land-xxhdpi" src="resources/screens/android/drawable-land-xxhdpi-screen.png" />
+        <splash qualifier="land-xxxhdpi" src="resources/screens/android/drawable-land-xxxhdpi-screen.png" />
+        <splash qualifier="port-ldpi" src="resources/screens/android/drawable-port-ldpi-screen.png" />
+        <splash qualifier="port-mdpi" src="resources/screens/android/drawable-port-mdpi-screen.png" />
+        <splash qualifier="port-hdpi" src="resources/screens/android/drawable-port-hdpi-screen.png" />
+        <splash qualifier="port-xhdpi" src="resources/screens/android/drawable-port-xhdpi-screen.png" />
+        <splash qualifier="port-xxhdpi" src="resources/screens/android/drawable-port-xxhdpi-screen.png" />
+        <splash qualifier="port-xxxhdpi" src="resources/screens/android/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <platform name="ios">
+    	<feature name="Geolocation">
+        	<param name="ios-package" value="CDVLocation" />
+    	</feature>
+    	<config-file overwrite="true" parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
+	        <false />
+	    </config-file>
+
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos</string>
+        </edit-config>
+
+        <edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos</string>
+        </edit-config>
+
+        <edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+            <string>A Aplicação usa os Serviços de Localização para fornecer ao utilizador um mapa dos postos de combustível nas proximidades e também fornecer instruções passo a passo para esses postos</string>
+        </edit-config>
+
+        <preference name="WKWebViewOnly" value="true" />
+        <feature name="CDVWKWebViewEngine">
+            <param name="ios-package" value="CDVWKWebViewEngine" />
+        </feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+
+        <icon height="57" platform="ios" src="resources/icons/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="resources/icons/ios/icon@2x.png" width="114" />
+        <icon height="40" platform="ios" src="resources/icons/ios/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="resources/icons/ios/icon-40@2x.png" width="80" />
+        <icon height="50" platform="ios" src="resources/icons/ios/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="resources/icons/ios/icon-50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="resources/icons/ios/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="resources/icons/ios/icon-60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="resources/icons/ios/icon-60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="resources/icons/ios/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="resources/icons/ios/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="resources/icons/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="resources/icons/ios/icon-76@2x.png" width="152" />
+        <icon height="29" platform="ios" src="resources/icons/ios/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="resources/icons/ios/icon-small@2x.png" width="58" />
+        <icon height="87" platform="ios" src="resources/icons/ios/icon-small@3x.png" width="87" />
+        <icon height="167" platform="ios" src="resources/icons/ios/icon-83.5@2x.png" width="167" />
+        <icon height="1024" platform="ios" src="resources/icons/ios/icon-1024.png" width="1024" />
+
+        <splash height="1136" platform="ios" src="resources/screens/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" platform="ios" src="resources/screens/ios/Default-667h.png" width="750" />
+        <splash height="2208" platform="ios" src="resources/screens/ios/Default-736h.png" width="1242" />
+        <splash height="1242" platform="ios" src="resources/screens/ios/Default-Landscape-736h.png" width="2208" />
+        <splash height="1536" platform="ios" src="resources/screens/ios/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="768" platform="ios" src="resources/screens/ios/Default-Landscape~ipad.png" width="1024" />
+        <splash height="2048" platform="ios" src="resources/screens/ios/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="1024" platform="ios" src="resources/screens/ios/Default-Portrait~ipad.png" width="768" />
+        <splash height="960" platform="ios" src="resources/screens/ios/Default@2x~iphone.png" width="640" />
+        <splash height="480" platform="ios" src="resources/screens/ios/Default~iphone.png" width="320" />
+
+    </platform>
+    <content src="index.html" />
+    <access origin="cdvfile://*" />
+    <!-- Enable requests to content: URLs -->
+    <access origin="content:///*" />
+    <!-- Don't block any requests -->
+    <access origin="*" />
+    <access origin="*://*/*" />
+    <access origin="file:///*" />
+
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="*://*/*" />
+    <allow-navigation href="http://app/*"/>
+    <allow-navigation href="https://app/*"/>
+    <allow-navigation href="file://*/*" />
+    <allow-navigation href="file:///*/*" />
+    <allow-navigation href="cdvfile://*/*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

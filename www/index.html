@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<meta http-equiv="X-Frame-Options" content="allow-from *">
+		<meta charset="utf-8" />
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-store" />
+		<meta http-equiv="expires" content="-1" />
+		<meta http-equiv="expires" content="Tue,01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>OZ Fuel for Professionals</title>
+		<link rel="stylesheet" type="text/css" href="js/lightslider/css/lightslider.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery.mobile/jquery.mobile-1.4.5.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/google-maps.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/homepage.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/postos.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/pagamentos.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/reservas.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/email.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/info.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/pos.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/custom-checkbox.css?v=3" />
+		<link rel="stylesheet" type="text/css" href="css/magnific-popup.css?v=3" />
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap" rel="stylesheet">
+	</head>
+	<body ng-app="app" class="platform-ios platform-cordova platform-webview">
+      <ion-nav-view>
+		<div id="overlay" style="display:none">
+		</div>
+		<div id="overlay_old" style="display:none">
+			<div class="app-content2" id="content2">
+				<div class="boxes2">
+				<div class="box">
+					<div class="loading-box">
+						<div class="logo-box" id="box1"><img src="img/logo.svg" border="0" class="logo"></div>
+						<div class="logo-text" id="box2"><img src="img/text.svg" border="0" class="logo" id="box2-logo"></div>
+						<div class="loading">
+							<img src="img/gas_pump.svg" border="0" class="logo" id="gas_pump" width="50">
+							<div class="logo-loading">
+							<input type="hidden" value="0" id="progress_width">
+							<div class="logo-loading-inner" id="bar1"></div>
+							<div class='percent' id='percent1' style="display:none"></div>
+							</div>
+						</div>
+						<div class="indicators">
+							<div style="display:inline-block;width:50px">&nbsp;</div>
+							<div class="indicators-loading">
+								<span class="indicator_empty">E</span>
+								<span class="indicator_half">½</span>
+								<span class="indicator_full">F</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="app-footer" id="app-footer2" style="display:block;background:none">
+				<div class="footer" style="background:none">
+					Copyright © <b>G27</b> 2020. All rights reserved.
+				</div>
+			</div>
+		</div>
+		<div id="overlay-login">
+		<div class="header-out" style="position:absolute"><div class="header" id="header2_login"></div></div>
+			<div class="app-content" id="content2-login">
+				<div class="boxes">
+					<div class="box">
+						<div id="home_not_logado" class="login-box" style="display:none;padding:0">
+							<div class="login-form">
+								<div style="width:100%;text-align:center;padding-top:25%"><img style="height:16%;max-width:288px;padding:15px 30px 15px 30px" src="img/logo_w_txt.png" border="0" class="logo"></div>
+
+								<div style="width:100%;text-align:center;padding:0px;margin-top:5%">
+									<div style="font-size:18px;color:#fff;width:100%;height:15px;line-height:15px;text-align:center;font-weight:400">Já tem uma conta HiQi?</div>
+									<input type="button" value="Entrar" onmouseup="goto_to_login();" style="background:#ffffff;border-color:#ffffff;color:#3ec2cf;margin:0px;margin-top:15px;height:46px;width:257px">
+
+									<div style="font-size:18px;color:#fff;width:100%;height:21px;text-align:center;font-weight:400;margin-top:8%">Ainda não é cliente HiQi?</div>
+									<div style="font-size:18px;color:#fff;width:100%;height:21px;text-align:center;font-weight:400">Faça a sua adesão:</div>
+									
+									<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
+									<div class="clear"></div>
+									<input type="button" name="bt-login2" value="Profissionais" onmouseup="goto_to_registo2();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
+									<div class="clear"></div>
+								</div>
+
+								<div style="width:100%;color:#fff;text-align:center;padding:10px;border-radius:12px;border-bottom-right-radius:0px;margin-top:5px">
+									<div style="font-size:10px;width:100%;left:0;position:fixed;bottom:10px"><a style="color:#fff" href="#" onclick="ver_politica('termos_home')">Politica de Privacidade</a> &nbsp;&nbsp;  <a style="color:#fff" href="#" onclick="ver_termos('termos_home')">Termos & Condições</a></div>									
+									<div id="termos_home" style="position:absolute;top:0px;left:0;height:100vh;z-index:2;background-color:rgba(0, 0, 0, 0.55);color:#000;width:100%;text-align:left;font-size:12px;display:none;padding:20px;border:solid 1px #ccc">										
+										<div style="width:100%;height:100%;background-color:#fff;padding:20px">
+											<div class="modal-header" style="width: 100%;">
+										        <h5 class="modal-title" id="exampleModalCenterTitle" style="width:60%;float:left;margin:0;font-size:16px;"></h5>
+										        <button style="float:right" type="button" class="close" data-dismiss="modal" aria-label="Close" onclick='$("#termos_home").toggle();'>
+										          <span aria-hidden="true">×</span>
+										        </button>
+										    </div>
+											<div class="clear"></div>
+										    <div class="modal-body" style="overflow:auto"></div>
+									    </div>
+									</div>
+
+								</div>
+
+
+								<div style="width:257px;margin: 0 auto;background-color:#transparent;text-align:center;border-radius:30px;margin-top:5px;border:solid 1px #333399">
+									<div style="width:100%;height:55px;text-align:center">
+										<div style="padding:0px;width:100%;float:left;text-align:left;font-weight:400;line-height:20px;font-size:10px">
+											<div style="padding:10px;padding-left:15px;padding-bottom:0px;font-size:16px;width:100%;color:#333399">Podemos ajudar?</div>
+											<div style="padding:10px;padding-left:15px;padding-top:0px;max-width:288px:0px;font-size:13px;width:100%;color:#333399">Ligue-nos: +351 211978951(*)</div>
+										</div>
+										<div style="padding:0px;width:255px;float:right;text-align:right;position:absolute"><img src="img/hello.png" style="width:55px" border="0"></div>
+									</div>
+								</div>
+								<div style="text-align:center;font-size:10px;width:100%;color:#333399;display:table">(*) Rede fixa nacional</div>
+							</div>
+							<!--<div class="app-footer2" id="app-footer2" style="display:block;background:none">
+								<div class="footer" style="background:none"></div>
+							</div>-->
+						</div>
+						<div id="login-box" class="login-box" style="padding:0">
+
+							<div style="width:100%;text-align:center;height:180px;display:flex;align-items:center;justify-content:center;background:linear-gradient(0deg, rgba(1,239,172,1) 0%, rgba(1,200,209,1) 50%);"><img style="width:150px;margin-top:-40px" src="img/logo_w_txt.png" border="0" class="logo"></div>
+							<div style="margin:0 auto;border:solid 5px #fff;background-color:#fff;width:90px;height:90px;border-radius:50%;margin-top:-50px"><img id="icon1" style="width:100%" src="img/icon1.png" border="0"></div>
+
+							<div id="fundo_branco" style="padding:30px;background-color:#ffffff;margin-top:-50px;overflow:hidden;">
+								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Efetue o seu login</div>
+								<div style="max-width:350px;width:100%;margin:0 auto;text-align:center;padding:15px 30px 15px 30px;border-radius:12px;margin-top:0px">
+									
+
+
+									<div class="login-form" style="padding:0;width:100%;">
+
+											<div id="login_standard" style="display:none">
+												<input type="text" name="login" id="login" placeholder="Username" style="width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+												<div style="position:relative"><input type="password" name="password" id="password" placeholder="Password" style="padding-right:48px;width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6"><div style="position:absolute;right:0;top:47px;padding:11px" id="password_p" onclick="showhidep()"><img style="width:20px;height:14px" src="img/show_p.svg" border="0"></div></div>
+
+												<input type="button" name="bt-login" id="bt-login-standard" value="LOGIN" onmouseup="login()">
+											</div>
+
+											<div id="login_pin">
+												<div style="width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+													<select id="indicativo" style="display:inline-block;float:left;width:30%;height:35px;border:0px;background-color:transparent;color:#3ec2cf">
+														<option value="351">351</option>
+														<option value="33">33</option>
+														<option value="34">34</option>
+														<option value="40">40</option>
+														<option value="41">41</option>
+														<option value="48">48</option>
+														<option value="49">49</option>
+														<option value="359">359</option>
+													</select>
+													<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone" placeholder="Telemovel" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
+												</div>
+												<div style="position:relative;width:180px;margin:0 auto;margin-bottom:5px">
+													<input pattern="[0-9]*" inputmode="decimal" onkeyup="$('#PIN2').focus()" type="password" name="PIN1" id="PIN1" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+													<input pattern="[0-9]*" inputmode="decimal" onkeyup="$('#PIN3').focus()" type="password" name="PIN2" id="PIN2" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+													<input pattern="[0-9]*" inputmode="decimal" onkeyup="$('#PIN4').focus()" type="password" name="PIN3" id="PIN3" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+													<input pattern="[0-9]*" inputmode="decimal" onkeyup="login_pin()" type="password" name="PIN4" id="PIN4" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+												</div>
+												<input type="button" name="bt-login" id="bt-login" value="Entrar" onmouseup="login_pin()">
+												<input type="image" src="img/fingerprint.png" name="bt-touchId" id="bt-touchId" value="touchId" onclick="le_dados()" style="margin:0 auto;border:0;width:50px;float:left;display:none;position: absolute;right: -50px;top: 80px;">
+											</div>									
+
+
+										<input type="button" name="bt-login" id="bt-login2" value="..LOADING.." style="background:#231f20;color:#666;display:none">
+										<div class="clear"></div>
+										<div style="font-size:12px;width:100%;margin-top:5px"><a onmouseup="recuperar_password();" style="text-decoration:none;color:#3ec2cf">Recuperar PIN</a></div>
+										<div class="clear"></div>
+										<div style="font-size:12px;width:100%;margin-top:40px;text-decoration:none;color:#000">Ainda não é cliente HiQi?</div>
+										<div class="clear"></div>
+										<input type="button" name="bt-login" value="Registe-se agora" onmouseup="pagina_gegisto();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+
+									</div>
+									
+
+									<div class="recupera-password-form" style="padding:0;width:100%;display:none">
+										<div style="font-size:12px;width:100%;margin-top:20px;color:#333333">Para poder alterar a sua password, deve inserir o número de Telemóvel asociado à sua conta.
+										<br><br>Irá receber um código por SMS que deverá inserir no ecran seguinte.</div>
+										<input type="text" name="login" id="m_phone_recupera" placeholder="Telemóvel" style="width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+										<input type="button" name="bt-login" id="bt-recuperar" value="ENVIAR" onmouseup="recuperar_password2()">
+										<input type="button" name="bt-login" id="bt-recuperar2" value="..LOADING.." style="background:#231f20;color:#fff;display:none">
+										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Voltar</div>
+										<div class="clear"></div>
+										<div class="clear"></div>
+									</div>
+
+									<div class="recupera-password-form2" style="padding:0;width:100%;display:none">
+										<div style="font-size:12px;width:100%;margin-top:20px;color:#333333">Insira abaixo a nova password que enviamos para o seu número de Telemóvel.</div>
+										<div style="position:relative"><input type="password" name="password" id="nova_password" placeholder="Password" style="padding-right:48px;width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6"></div>
+										<input type="button" name="bt-login" id='bt-validar' value="VALIDAR NOVO CODIGO" onmouseup="validar()">										
+										<input type="button" name="bt-login" id="bt-validar2" value="..LOADING.." style="background:#231f20;color:#666;display:none">
+										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Voltar</div>								
+										<div class="clear"></div>
+									</div>
+
+
+									<div class="recupera-password-form3" style="padding:0;width:100%;display:none">
+										<div style="font-size:14px;width:100%;margin-top:20px;color:#333333">A sua nova password foi aceite, aceda agora à pagina de login para se autenticar.</div>										
+										<input type="button" name="bt-login" value="VOLTAR" onmouseup="voltar_ao_login();" style="background:#ffffff;border-color:#666;color:#3ec2cf">
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div style="width:100%;color:#666;text-align:center;padding:10px;border-radius:12px;border-bottom-right-radius:0px;margin-top:0px">
+									<div style="font-size:10px;width:100%;left:0;position:fixed;bottom:10px"><a style="color:#3ec2cf" href="#" onclick="ver_politica('termos_home2')">Politica de Privacidade</a> &nbsp;&nbsp; <a style="color:#3ec2cf" href="#" onclick="ver_termos('termos_home2')">Termos & Condições</a></div>
+									<div id="termos_home2" style="position:absolute;top:0px;left:0;height:100vh;z-index:2;background-color:rgba(0, 0, 0, 0.55);color:#000;width:100%;text-align:left;font-size:12px;display:none;padding:20px;border:solid 1px #ccc">
+										
+										<div style="width:100%;height:100%;background-color:#fff;padding:20px">
+											<div class="modal-header" style="width: 100%;">
+										        <h5 class="modal-title" id="exampleModalCenterTitle" style="width:60%;float:left;margin:0;font-size:16px;"></h5>
+										        <button style="float:right" type="button" class="close" data-dismiss="modal" aria-label="Close" onclick='$("#termos_home2").toggle();'>
+										          <span aria-hidden="true">×</span>
+										        </button>
+										    </div>
+											<div class="clear"></div>
+										    <div class="modal-body" style="overflow:auto"></div>
+									    </div>
+
+									</div>
+
+
+								</div>
+								
+								<!--
+								<div style="width:257px;margin: 0 auto;background-color:#transparent;text-align:center;border-radius:30px;margin-top:5px;border:solid 1px #333399">
+									<div style="width:100%;height:55px;text-align:center">
+										<div style="padding:0px;width:100%;float:left;text-align:left;font-weight:400;line-height:20px;font-size:10px">
+											<div style="padding:10px;padding-left:15px;padding-bottom:0px;font-size:16px;width:100%;color:#333399">Podemos ajudar?</div>
+											<div style="padding:10px;padding-left:15px;padding-top:0px;max-width:288px:0px;font-size:13px;width:100%;color:#333399">Ligue-nos: +351 211978951(*)</div>
+										</div>
+										<div style="padding:0px;width:255px;float:right;text-align:right;position:absolute"><img src="img/hello.png" style="width:55px" border="0"></div>
+									</div>
+								</div>
+								<div style="text-align:center;font-size:10px;width:100%;color:#333399;display:table">(*) Rede fixa nacional</div>
+								-->
+
+
+
+
+
+							</div>							
+
+							<!--<div class="app-footer2" id="app-footer2" style="display:block;background:none">
+								<div class="footer" style="background:none"></div>
+							</div>-->
+						</div>
+
+						<div id="registo-box" class="login-box" style="padding:0;display:none;">
+
+							<div style="width:100%;text-align:center;height:180px;display:flex;align-items:center;justify-content:center;background:linear-gradient(0deg, rgba(1,239,172,1) 0%, rgba(1,200,209,1) 50%);"><img style="width:150px;margin-top:-40px" src="img/logo_w_txt.png" border="0" class="logo"></div>
+							<div style="margin:0 auto;border:solid 5px #fff;background-color:#fff;width:90px;height:90px;border-radius:50%;margin-top:-50px"><img id="icon1" style="width:100%" src="img/icon1.png" border="0"></div>
+
+							<div id="fundo_branco2" style="padding:30px;background-color:#ffffff;margin-top:-50px;overflow:hidden;">
+								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Efetue o seu registo</div>
+								<div style="max-width:350px;width:100%;margin:0 auto;text-align:center;padding:15px 30px 15px 30px;border-radius:12px;margin-top:0px">
+									<div class="login-form" style="padding:0;width:100%;">
+
+										<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+										<div class="clear"></div>
+										<input type="button" name="bt-login2" value="Profissionais" onmouseup="goto_to_registo2();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+
+										<div class="clear"></div>
+										<div style="font-size:12px;width:100%;margin-top:40px;text-decoration:none;color:#000">Já tem conta HiQi?</div>
+										<div class="clear"></div>
+										<div style="font-size:12px;width:100%;margin-top:0px;text-decoration:none;color:#3ec2cf" onmouseup="goto_to_login();">Clique aqui para fazer login</div>
+
+									</div>
+
+								</div>
+								<div style="width:100%;color:#666;text-align:center;padding:10px;border-radius:12px;border-bottom-right-radius:0px;margin-top:0px">
+									<div style="font-size:10px;width:100%;left:0;position:fixed;bottom:10px"><a style="color:#3ec2cf" href="#" onclick="ver_politica('termos_home3')">Politica de Privacidade</a> &nbsp;&nbsp; <a style="color:#3ec2cf" href="#" onclick="ver_termos('termos_home3')">Termos & Condições</a></div>
+									
+
+									<div id="termos_home3" style="position:absolute;top:0px;left:0;height:100vh;z-index:2;background-color:rgba(0, 0, 0, 0.55);color:#000;width:100%;text-align:left;font-size:12px;display:none;padding:20px;border:solid 1px #ccc">										
+										<div style="width:100%;height:100%;background-color:#fff;padding:20px">
+											<div class="modal-header" style="width: 100%;">
+										        <h5 class="modal-title" id="exampleModalCenterTitle" style="width:60%;float:left;margin:0;font-size:16px;"></h5>
+										        <button style="float:right" type="button" class="close" data-dismiss="modal" aria-label="Close" onclick='$("#termos_home3").toggle();'>
+										          <span aria-hidden="true">×</span>
+										        </button>
+										    </div>
+											<div class="clear"></div>
+										    <div class="modal-body" style="overflow:auto"></div>
+									    </div>
+									</div>
+
+
+
+								</div>
+							</div>							
+
+							<!--<div class="app-footer2" id="app-footer2" style="display:block;background:none">
+								<div class="footer" style="background:none"></div>
+							</div>-->
+						</div>
+
+						<div id="registo-1" class="" style="display:none"></div>
+						<div id="registo-2" class="" style="display:none"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content_load" id="content_load">
+			<div class="filtros-right-wrap">
+				<div class="filtros-right">
+					<div class="title" id="trad7">Filter</div>
+					<div class="filt"></div>
+					<div class="foot">
+						<div class="filtrar" id="executaFiltros">View Items</div>
+						<div class="filtrar" id="clearItems">Clear Items</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sort-right-wrap">
+				<div class="sort-right">
+					<div class="title" id="trad8">Sort</div>
+					<div class="filt2"></div>
+					<div class="foot">
+						<div class="filtrar" id="executaSort">View Items</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="points-wrap"></div>
+
+			<div data-role="page" id="page">
+
+				<div data-role="panel" id="profile-panel" data-display="overlay" style="z-index:10000"><div id="profile"></div><div id="info-panel" class="info-panel"><!-- os menus vem da app.js --></div></div>
+				<div class="app-header" id="app-header" style="display:block" data-hide-during-focus="false">
+					<div class="header" id="header">
+					<div class="left back"></div>
+					<div class="cent"></div>
+					<div class="right"></div>
+					<div class="clear"></div>
+					</div>
+				</div>
+
+ 				<div class="app-content ui-panel-wrapper" id="content" style="display:none"></div>
+				<div class="app-content ui-panel-wrapper" id="content_mapa" style="display:none;margin-top:6px;background:#fff;box-shadow:1px 0px 1px 0px #ccc;padding-top:20px"><div id="map-trajetos" style="height:300px"></div><div id="street-view" style="height:300px"></div></div>
+				<div class="app-content ui-panel-wrapper" id="content_iframe" style="display:none;margin-top:6px;background:#fff;box-shadow:1px 0px 1px 0px #ccc;padding-top:20px">
+					<iframe
+			        crossorigin="anonymous"
+			        frameborder="0"
+			        allowfullscreen
+			        id="iframe" src="" width="100%" height="100%">
+			        </iframe></div>
+				<div class="app-content ui-panel-wrapper" id="content_home"></div>
+			</div>
+			<div id="slider-postos"></div>
+			<div class="app-footer" id="app-footer">
+				<div class="footer"></div>
+			</div>
+		</div>
+		<script>
+			var APP_ON=2;
+			var globalUrl='https://app.g27.eu/';
+			var markersArray=[];
+			var version=2;
+			var tipo_login=1;
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuPw9O-z98eEOxzciSIdfxbMjQZ4nvKn0&v=3&libraries=geometry&callback=Function.prototype" async nonce="{script value}"></script>
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="js/jquery.magnific-popup.min.js?v=3"></script>
+		<script src="js/filter_destroy.js?v=3"></script>
+
+		<script src="js/app.js?v=3"></script>
+		<script src="js/maps.js?v=3"></script>
+		<script src="js/helpers.js?v=3"></script>
+		<script src="js/app_sync.js?v=3"></script>
+		<script src="js/filter.js?v=3"></script>
+		<script src="js/lightslider/js/lightslider.js?v=3"></script>
+		<script src="js/jquery.mobile-1.5.0-rc1.min.js?v=3"></script>
+		<script src="js/Chart.js?v=3"></script>
+		<script src="js/markerclusterer.js?v=3"></script>
+		<script type="text/javascript">window.setInterval(function(){verificaSession();},5000);</script>
+		<script type="text/javascript">window.setInterval(function(){servicoPOS_escuta();},5000);</script>
+	</ion-nav-view>
+   </body>
+</html>

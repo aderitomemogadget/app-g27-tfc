@@ -1,0 +1,15 @@
+.form-new-email { margin:20px;position:relative;display:block;margin-top:60px}
+.form-new-email #bt-new-email {display:inline-block;padding:10px 20px;background:#c7342a;color:#fff;font-weight:600;width:100%;text-align:center}
+
+.form-new-email .ui-input-text, .form-new-email input, .form-new-email textarea {background:#fff !important;box-shadow:none !important;-webkit-box-shadow:none !important;border-color:#000 !important}
+.app-content .mensagens-container {margin-top:60px;padding:10px;text-align:center}
+.app-content .mensagens-container .nova-mensagem { margin-top:20px;display:inline-block;padding:10px 20px;background:#c7342a;color:#fff;font-weight:600;max-width:200px;margin:20px auto}
+
+.app-content .mensagens-container .mensagem {width:100%;display:block;padding:10px;margin-bottom:10px;background:#f0f0f0;border-radius:5px;position:relative;text-align:left}
+.app-content .mensagens-container .pergunta {display:inline-block;max-width:90%}
+.app-content .mensagens-container .resposta_on {display:inline-block;width:10px;background:#2ac736;height:10px;border-radius:100%;position:absolute;right:5%;top:40%}
+.app-content .mensagens-container .resposta_off {display:inline-block;width:10px;background:#c7342a;height:10px;border-radius:100%;position:absolute;right:5%;top:40%}
+
+.app-content .mensagens-container .ver-pergunta {border-radius:10px;padding:10px;margin-bottom:10px;text-align:left;display:inline-block;width:95%;float:left;background:rgba(137, 247, 137, 0.2)}
+.app-content .mensagens-container .ver-resposta {border-radius:10px;padding:10px;margin-bottom:10px;text-align:left;display:inline-block;width:95%;float:right;background:rgba(251, 184, 184, 0.2)}
+.app-content .mensagens-container .data {text-align:right;font-size:10px;margin-bottom:5px;margin-right:5px}

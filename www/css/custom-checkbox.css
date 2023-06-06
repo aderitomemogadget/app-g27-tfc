@@ -1,0 +1,239 @@
+/* ###### CUSTOM INPUTS ###### */
+/* Customize the label (the container) */
+.custom-radio {
+  display:block;
+  position:relative;
+  /*line-height:20px;*/
+  cursor:pointer;
+  font-size:22px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-family:'Montserrat', sans-serif;
+  margin:0 !important;
+  /*padding-top:20px;*/
+}
+
+.custon-radio.active {}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+  position:absolute;
+  opacity:0;
+}
+
+/* Create a custom radio button */
+.checkmark {min-height:115px;height:100%;width:100%;border-radius:15px;border:solid 1px #fff;display:inline-block;background: #f2f2f2;}
+
+.custom-radio:hover input ~ .checkmark {background-color:#fff}
+/* On mouse-over, add a grey background color */
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {background:#00ac4e;}/*verde*/
+.laranja input:checked ~ .checkmark {background:#ec6f00;}/*laranja*/
+.azul_cian input:checked ~ .checkmark {background:#05cdc6;}/*azul cian*/
+.azul input:checked ~ .checkmark {background:#05a5cd;}/*azul*/
+.azul2 input:checked ~ .checkmark {background:#0065fd;}/*azul gas*/
+.negro input:checked ~ .checkmark {background:#000;}/*azul*/
+.verde input:checked ~ .checkmark {background:#038c27;}/*verde gasolina*/
+.verde_claro input:checked ~ .checkmark {background:#05cd1c;}/*verde claro*/
+
+
+.custom-radio input:checked ~ .checkmark .Identifier{  background:#00ac4e !important;  border:solid 1px #fff;}
+.laranja input:checked ~ .checkmark .Identifier {background: #ec6f00 !important}
+.azul_cian input:checked ~ .checkmark .Identifier {background: #05cdc6 !important}
+.azul input:checked ~ .checkmark .Identifier {background: #05a5cd !important}
+.azul2 input:checked ~ .checkmark .Identifier {background: #0065fd !important}
+.negro input:checked ~ .checkmark .Identifier {background: #000 !important}
+.verde input:checked ~ .checkmark .Identifier {background: #038c27 !important}
+.verde_claro input:checked ~ .checkmark .Identifier {background: #05cd1c !important}
+
+
+.Identifier img.base { visibility:visible;display:inline-block}
+.Identifier img.selected { visibility:hidden;display:none}
+
+.custom-radio input:checked ~ .checkmark .Identifier img.base{
+  visibility:hidden;
+  display:none;
+}
+
+.custom-radio input:checked ~ .checkmark .Identifier img.selected{
+  visibility:visible;
+  display:inline-block;
+}
+
+
+.custom-radio input:checked ~ .checkmark .Price{
+  color:#fff !important;
+}
+
+.custom-radio input:checked ~ .checkmark .Description{
+  color:#fff !important;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content:"";
+  position:absolute;
+  display:none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark {
+  display:inline-block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+	t/*op:2px;
+	left:2px;
+	width:6px;
+	height:6px;
+	border-radius:50%;
+	background:#000;*/
+}
+
+/* ###### CUSTOM INPUTS ###### */
+/* Customize the label (the container) */
+.custom-radio2 {
+  display:block;
+  position:relative;
+  padding-left:35px;
+  margin-bottom:12px;
+  line-height:20px;
+  cursor:pointer;
+  font-size:22px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-family:'Montserrat', sans-serif;
+  min-height:20px;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio2 input {
+  position:absolute;
+  opacity:0;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position:absolute;
+  top:0;
+  left:45%;
+    height:20px;
+    width:20px;
+  background-color:#fff;
+  border-radius:50%;
+  border:solid 1px #000;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio2:hover input ~ .checkmark2 {
+  background-color:#fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio2 input:checked ~ .checkmark2 {
+  background-color:#fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content:"";
+  position:absolute;
+  display:none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio2 input:checked ~ .checkmark2:after {
+  display:block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio2 .checkmark2:after {
+    top:4px;
+    left:4px;
+    width:10px;
+    height:10px;
+  border-radius:50%;
+  background:#000;
+}
+
+
+
+/* ###### CUSTOM INPUTS ###### */
+/* Customize the label (the container) */
+.custom-radio-posto {
+  display:block;
+  position:relative;
+  line-height:20px;
+  cursor:pointer;
+  font-size:22px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-family:'Montserrat', sans-serif;
+  padding:0;
+  margin:0 !important;
+}
+
+.custom-radio-posto.active {}
+
+/* Hide the browser's default radio button */
+.custom-radio-posto input {
+  position:absolute;
+  opacity:0;
+}
+
+/* Create a custom radio button */
+.checkmark-posto {
+  /*min-height:130px;*/
+  height:100%;
+  width:100%;
+  border-radius:100%;
+  border:solid 1px #fff;
+  display:inline-block;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio-posto:hover input ~ .checkmark-posto {
+  background-color:#fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio-posto input:checked ~ .checkmark-posto {
+  /*border:solid 1px #000;*/
+}
+
+.custom-radio-posto input:checked ~ .checkmark-posto .Identifier{
+  background:#333399 !important;
+  border:1px solid #333399 !important;
+  color:#fff;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-posto:after {
+  content:"";
+  position:absolute;
+  display:none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio-posto input:checked ~ .checkmark-posto {
+  display:block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio-posto .checkmark-posto:after {
+  t/*op:2px;
+  left:2px;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#000;*/
+}

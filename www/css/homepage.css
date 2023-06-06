@@ -1,0 +1,93 @@
+#profile{float:left;width:100%;background:#fff}
+#profile .homepageContainer .homepageLoginInfo > div{}
+#profile .app-header .header{background:#fff}
+.info-panel{overflow:scroll;overflow-x:hidden;float:left;width:100%;background-color:#fff;margin-top:0px}
+#info_login{width:100%;display:block;padding:20px 10px}
+#info_login .box {width:50%;display:inline-block;padding:15px 10px;vertical-align:top}
+#info_login .box .telemovel{text-align:right;font-weight:600}
+#info_login .nome {display:inline-block;width:50%;padding:0 10px;padding-top:20px;font-weight:600}
+#info_login .truck {display:inline-block;width:50%;text-align:right;padding:0 10px;padding-top:20px;font-weight:600}
+.ui-page-theme-a .ui-body-inherit #info_login{color:#fff !important;text-shadow:none !important}
+#info_login .box .foto{width:100%;text-align:center;margin:0 auto;display:inline-block}
+#info_login .box .foto div{width:100%;width:80px;height:80px;background-size:cover !important;background-position:center !important;border-radius:100%;margin:0 auto}
+#info_login .box .nome{width:100%;text-align:center}
+#info_login .box .telemovel span{font-weight:600}
+.limites {padding:10px 20px}
+.limites .title_limit{display:block;width:100%;font-weight:600;text-align:left}
+.limites .limit{padding:5px 0}
+.limites .limit span{font-weight:600}
+.profile-list{padding:0;margin:0;margin-top:15px}
+
+#profile-panel{width:100%}
+.profile-list .item{padding:0px 30px;padding-right:30px;font-weight:300;position:relative;line-height:20px}
+.profile-list .item .fa{float:right;color:#e1e1e1;font-size:20px;position:absolute;top:20%;right:6%}
+.profile-list .item:last-child{border-bottom:none}
+.profile-list .item > div{line-height:35px;display:block;border-bottom:solid 0px #e1e1e1;padding-bottom:0px;font-size:14px}
+.profile-list .item img.info{position:absolute;top:10px;z-index:9999}
+.profile-list .item img{float:left;width:35px;margin-right:10px}
+.profile-list .item.home{background:#c7342a;color:#fff;display:inline-block;width:100%}
+.driver{color:#fff !important;font-size:12px !important}
+.homepageContainer.container{margin:0;float:left;display:block;font-size:12px;font-weight:600;width:100%}
+.homepageContainer.container .limite-label{font-weight:700}
+.homepageContainer .homepageLoginInfo{padding:10px;font-size:14px;float:left;width:100%;padding-bottom:0px}
+.homepageContainer .homepageLoginInfo .info-page{height:70px;background:rgb(1,200,209);background:linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo .info-page2{height:70px;background:rgb(1,200,209);background:linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);width:100%;padding:10px 10px;border-radius:15px}
+.homepageContainer .homepageLoginInfo > div .role {color:red}
+.homepageContainer .homepageLoginInfo > div .matricula{color:#333399}
+.homepageContainer .homepageLoginInfo .info-page2 .matricula:after{color:#333399;border-radius:50%;border:solid 1px #b2e7ec;content:"";width:40px;height:40px;background-position-x:8px !important;background-position-y:14px !important;background:url(../img/menu-veiculos.svg) #0000;float:left;background-repeat:no-repeat;background-size:68%;background-color:#fff}
+.homepageContainer .homepageLoginInfo > div .matricula:after{color:#333399;border-radius:50%;content:"";width:50px;height:50px;background-position-x:8px !important;background-position-y:14px !important;background:url(../img/menu-veiculos.svg) #0000;float:left;background-repeat:no-repeat;background-size:70%;background-color:#fff}
+.homepageContainer .homepageLoginInfo > div .matricula.white:after{color:#333399;border-radius:50%;content:"";width:50px;height:50px;background-position-x:8px !important;background-position-y:14px !important;background:url(../img/menu-veiculos.svg) #0000;float:left;background-repeat:no-repeat;background-size:70%;background-color:#fff}
+
+.homepageContainer .homepageLoginInfo > div .matricula_off:after{content:"";width:30px;height:25px;background-position-y:8px !important;background:url(../img/car-off.svg) #0000;float:left;background-repeat:no-repeat;background-size:70%}
+
+.homepageContainer .homepageLoginInfo > div .matricula span{margin-left:10px;font-size:20px;color:#333399}
+.info-page2 .matricula span{color:#b2e7ec !important}
+
+.homepageContainer .homepageLoginInfo > div .matricula2 span{margin-left:10px;font-size:20px;color:#333399}
+.homepageContainer .homepageLoginInfo > div .matricula_off span{font-size:20px}
+.homepageContainer .homepageLoginInfo > div .matricula img{position:absolute;width:15px;right:-10px}
+.homepageContainer .homepageLoginInfo > div .matricula_off img{position:absolute;width:15px;right:-10px}
+.homepageContainer .homepageLoginInfo > div img.img-homepage{position:absolute;width:25px;left:22px;top:22px}
+.homepageContainer .homepageLoginDetalhes {margin-top:-10px;float:left;width:100%;padding:0}
+.homepageContainer .homepageLoginDetalhes #map-homepage {margin-top:5px;background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.59) 10%, white 50%, white 100%);}
+.homepageContainer .homepageLoginDetalhes .voce-aqui {font-size:12px;padding:10px 15px;text-align:right}
+.homepageContainer .homepageLoginDetalhes .voce-aqui span{font-weight:700}
+.homepageContainer .homepageLoginSaldo .saldo{text-align:center;padding:20px 0}
+.homepageContainer .homepageLoginSaldo .saldo span{font-weight:700}
+.homepageContainer .homepageLoginSaldo .saldo-litros{background:#c7342a;margin:10px auto;padding:10px 5px;width:80px;color:#fff;text-align:center}
+.homepageContainer .homepageLoginDetalhes .mapa-exemplo img {width:100%}
+.efeito1{height: 20px;width: 100%;margin: 0px;position: absolute;text-align: center;background: rgb(225,225,225);background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(1,200,209,0) 100%);font-size: 16px;font-family: 'Titillium Web',sans-serif;color: #000;line-height: 60px;z-index:2}
+.homepageContainer .homepageConsumos {display:block;float:left;width:100%;padding:10px 0}
+.homepageContainer .homepageConsumos .homepageConsumosHeaders > div {width:24.3%;padding:2px;text-align:center;margin:0 auto;background:#c7342a;color:#fff;margin:0 16px;display:inline-block;position:relative}
+.homepageContainer .homepageConsumos .homepageConsumosHeaders > div.limite {}
+.homepageContainer .homepageConsumos .homepageConsumosHeaders > div.limite img{position:absolute;width:15px;right:-18px}
+.homepageContainer .homepageConsumos .homepageConsumosLine {display:block;border-bottom:solid 1px #000;padding:10px 0}
+.homepageContainer .homepageConsumos .homepageConsumosLine > div {width:27.3%;text-align:center;margin:0 auto;margin:0 10px;display:inline-block}
+.homepageContainer .homepageAtalhos {text-align:center}
+#profile-limites {font-size:12px;font-weight:600}
+#profile-limites .limite-label{font-weight:700}
+#profile-limites .homepageConsumos {display:block;float:left;width:100%;padding:10px 0}
+#profile-limites .homepageConsumos .homepageConsumosHeaders > div {width:26.3%;padding:2px;text-align:center;margin:0 auto;background:#c7342a;color:#fff;margin:0 10px;display:inline-block}
+#profile-limites .homepageConsumos .homepageConsumosLine {display:block;border-bottom:solid 1px #000;padding:10px 0}
+#profile-limites .homepageConsumos .homepageConsumosLine > div {width:26.3%;text-align:center;margin:0 auto;margin:0 10px;display:inline-block}
+.homepageContainer .homepageAtalhos > div{min-height:87px;height:100%;width:87px;display:inline-block;background:#e1e1e1;border-radius:50%;text-align:center;margin:16px;padding-top:10px}
+.homepageContainer .homepageAtalhos > div.yellow{background:#deb902}
+.homepageContainer .homepageAtalhos > div.green{background:#269e29}
+.homepageContainer .homepageAtalhos > div.red{background:#c7342a}
+.homepageContainer .homepageAtalhos > div > img{width:40%;display:inline-block}
+.homepageContainer .homepageAtalhos > div > label{font-size:10px;font-weight:600;max-width:70%;margin:0 auto;line-height:1}
+.raio_pesquisa{text-align:center;padding:0;border:none}
+.raio_pesquisa .ui-slider-track{top:6px !important}
+.raio_pesquisa label{margin:10px 0}
+.raio_pesquisa input{text-align:center;width:60px}
+#slider-postos{position:fixed;bottom:-205px;z-index:9999}
+#slider-postos .Station-Item .posto-detalhes-outer{width:92%}
+#slider-postos .Station-Item{padding:0;background:transparent}
+#slider-postos .Station-Item .Station-Item-Background{background:#fff;border-radius:15px;height:130px;padding-top:10px;vertical-align:middle}
+#slider-postos .Station-Item .posto-actions{display:inline-block}
+#slider-postos .Station-Item .posto-actions > div {width:105px}
+#show-all-postos .ver-mapa {background:#fff;color:#42c4ce;border:1px solid #42c4ce;border-radius:20px;display:inline-block;padding:7px 12px;margin:5px;font-size:11px;font-weight:400}
+.horizontal-scroll-wrapper3 {width:280px;overflow-y:auto;overflow-x:scroll;transform-origin:right top;transform:rotate(-90deg) translateY(-280px);}
+.horizontal-scroll-wrapper3 > div {width:270px;height:270px;padding-right:10px;transform:rotate(90deg);margin-bottom:10px !important;}
+.horizontal-scroll-wrapper3 > div:first-child {margin-top:10px !important;}
+.menu_svg{width:30px;height:30px;padding:5px}

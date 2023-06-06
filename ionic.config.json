@@ -1,0 +1,8 @@
+{
+  "name": "G27 ANDROID",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "custom",
+  "id": "f8a64282"
+}

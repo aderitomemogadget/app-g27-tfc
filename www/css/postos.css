@@ -1,0 +1,175 @@
+.app-content .titulo{text-align:center;font-weight:700; position:fixed;width:100%;display:block;background:#fff;padding:10px;z-index:2;background:#c7342a;text-align:right;color:#fff;margin-bottom:10px;top:49px;padding-right:25px}
+.app-content .titulo span.litros-disponiveis{float:left;background:#fff;color:#000;font-size:14px;padding:1px 10px;font-weight:400}
+.app-content .titulo span.litros-disponiveis b{font-weight:600}
+.app-content .postos-list{position:fixed;margin-top:115px;padding:25px;padding-bottom:60px}
+
+.Station-Item{width:100%;display:block;padding:10px 0;margin-bottom:25px;position:relative;background:#fff;border-radius:25px}
+.Station-Item span{font-weight:400}
+.StationName span{font-weight:600}
+.Station-Item .posto-logo{display:inline-block;position:absolute;top:10px;left:0;width:20px;display:none}
+.Station-Item .posto-logo img{width:20px}
+.Station-Item .posto-detalhes{display:inline-block;width:100%}
+.Station-Item .posto-detalhes-outer{width:100%;float:right}
+.Station-Item .posto-detalhes2{display:inline-block;width:100%}
+.Station-Item .posto-detalhes2 .car{display:inline-block;min-width:290px;padding:5px 0}
+.Station-Item .posto-detalhes2 .car img{display:inline-block;width:36px;float:left;margin-right:5px}
+.Station-Item .posto-detalhes2 .car > div{display:inline-block;margin-right:15px}
+.Station-Item .posto-detalhes2 .car > div.distance{background:url(../img/menu-veiculos.svg);background-size:contain;text-indent:30px;background-repeat:no-repeat;font-size:10px}
+.Station-Item .posto-detalhes2 .car > div.duration{background:url(../img/clock.svg);background-size:contain;text-indent:20px;background-repeat:no-repeat;font-size:10px}
+.Station-Item .posto-detalhes2 .car > div.services{background:url(../img/services.png);background-size:contain;text-indent:26px;background-repeat:no-repeat;float:right;margin:0}
+.Station-Item .posto-detalhes2 .car .fa{display:initial;margin-left:2px}
+.Station-Item .posto-detalhes > div{padding-bottom:2px;font-size:10px}
+.Station-Item .posto-detalhes img{width:20px;position:absolute}
+.Station-Item .posto-detalhes .StationName span{color:#000}
+.Station-Item .posto-servicos{padding:0;border-top:solid 1px #e1e1e1;margin:20px 0;display:none}
+.Station-Item .posto-actions{text-align:left;margin-left:10px;width:95%}
+.Station-Item .posto-actions > div{display:inline-block;width:135px;padding:10px;color:#fff;margin:5px;font-weight:700;font-size:12px;position:relative;border-radius:20px}
+.Station-Item .posto-actions > div > img {position:absolute}
+
+.Station-Item .posto-actions .ver-mapa{background:#fff;text-indent:15px;border:1px solid #42c4ce;color:#42c4ce;border-radius:50%;width:35px !important;height:35px !important;float:right}
+.Station-Item .posto-actions .ver-mapa a{color:#42c4ce !important; }
+.Station-Item .posto-actions .ver-mapa img{left:8px;width:12px}
+
+
+.Station-Item2 .posto-actions .ver-mapa{background:#fff;text-indent:15px;border:1px solid #42c4ce;color:#42c4ce;border-radius:50%;width:35px !important;height:35px !important;float:right}
+.Station-Item2 .posto-actions .ver-mapa a{color:#42c4ce !important; }
+.Station-Item2 .posto-actions .ver-mapa img{left:8px;width:12px}
+
+
+.Station-Item .posto-actions .pagarloja{background:#fff;text-indent:15px;border:1px solid #42c4ce;color:#42c4ce;border-radius:50%;width:35px !important;height:35px !important;float:right}
+.Station-Item .posto-actions .pagarloja a{color:#42c4ce !important; }
+.Station-Item .posto-actions .pagarloja img{left:7px;width:20px;top:6px}
+.Station-Item2 .posto-actions .pagarloja{background:#fff;text-indent:15px;border:1px solid #42c4ce;color:#42c4ce;border-radius:50%;width:35px !important;height:35px !important;float:right}
+.Station-Item2 .posto-actions .pagarloja a{color:#42c4ce !important; }
+.Station-Item2 .posto-actions .pagarloja img{left:7px;width:20px;top:6px}
+
+
+.Station-Item .posto-actions .ver-posto span{margin-left:15px}
+.Station-Item .posto-actions .ver-posto{background: rgb(1,200,209);background: linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);text-indent:5px}
+.Station-Item .posto-actions .ver-posto img{left:10px;width:14px}
+
+.Station-Item2{width:100%;display:block;padding:10px 0;margin-bottom:25px;border:solid 1px #b2e7ec;position:relative;background:#fff;border-radius:25px}
+.Station-Item2 span{font-weight:600}
+.Station-Item2 .posto-logo{display:inline-block;position:absolute;top:10px;left:0;width:20px;display:none}
+.Station-Item2 .posto-logo img{width:20px}
+.Station-Item2 .posto-detalhes{display:inline-block;width:100%}
+.Station-Item2 .posto-detalhes-outer{width:100%;float:right;padding-left:20px}
+.Station-Item2 .posto-detalhes2{display:inline-block;width:100%}
+.Station-Item2 .posto-detalhes2 .car{display:inline-block;min-width:290px;padding:5px 0}
+.Station-Item2 .posto-detalhes2 .car img{display:inline-block;width:36px;float:left;margin-right:5px}
+.Station-Item2 .posto-detalhes2 .car > div{display:inline-block;margin-right:15px}
+.Station-Item2 .posto-detalhes2 .car > div.distance{background:url(../img/menu-veiculos.svg);background-size:contain;text-indent:30px;background-repeat:no-repeat;font-size:10px}
+.Station-Item2 .posto-detalhes2 .car > div.duration{background:url(../img/clock.svg);background-size:contain;text-indent:20px;background-repeat:no-repeat;font-size:10px}
+.Station-Item2 .posto-detalhes2 .car > div.services{background:url(../img/services.png);background-size:contain;text-indent:26px;background-repeat:no-repeat;float:right;margin:0}
+.Station-Item2 .posto-detalhes2 .car .fa{display:initial;margin-left:2px}
+.Station-Item2 .posto-detalhes > div{padding-bottom:2px;font-size:13px}
+.Station-Item2 .posto-detalhes img{width:20px;position:absolute}
+.Station-Item2 .posto-detalhes .StationName span{color:#000}
+.Station-Item2 .posto-servicos{padding:0;border-top:solid 1px #e1e1e1;margin:20px 0;display:none}
+.Station-Item2 .posto-actions{text-align:left;margin-left:10px;margin-right:10px}
+.Station-Item2 .posto-actions > div{display:inline-block;width:135px;padding:10px;color:#fff;margin:5px;font-weight:700;font-size:12px;position:relative;border-radius:20px}
+.Station-Item2 .posto-actions > div > img {position:absolute}
+.Station-Item2 .posto-actions .ver-mapa{background:#fff;text-indent:15px;border:1px solid #42c4ce;color:#42c4ce}
+.Station-Item2 .posto-actions .ver-mapa a{color:#42c4ce !important; }
+.Station-Item2 .posto-actions .ver-mapa img{left:8px;width:12px}
+.Station-Item2 .posto-actions .ver-posto span{margin-left:15px}
+.Station-Item2 .posto-actions .ver-posto{background: rgb(1,200,209);background: linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%);text-indent:5px}
+.Station-Item2 .posto-actions .ver-posto img{left:10px;width:14px}
+
+
+
+
+
+
+
+
+
+
+
+
+.lista-scroll .Station-Item .posto-actions .ver-posto{ text-indent:15px; }
+.lista-scroll .Station-Item .posto-actions .ver-posto span{ margin-left:20px}
+.lista-scroll .Station-Item .posto-actions .ver-posto img{left:20px; }
+.lista-scroll .Station-Item .posto-actions .ver-mapa{ text-indent:15px}
+.lista-scroll .Station-Item .posto-actions .ver-mapa a{color:#000 !important;margin-left:15px}
+.lista-scroll .Station-Item .posto-actions .ver-mapa img{left:20px}
+.lista-scroll .Station-Item .posto-detalhes2 .car > div.distance{font-size:16px}
+.lista-scroll .Station-Item .posto-detalhes2 .car > div.duration{font-size:16px}
+.Station{width:100%;display:inline-block;margin-bottom:10px}
+.Station .StationName{width:100%;text-align:center;display:inline-block;padding:10px;margin-bottom:10px}
+.Station .Address{width:100%;padding:0 10px}
+.Station .Location{width:100%;padding:0 10px}
+.Station .TimeTable{width:100%;padding:0 10px}
+.Station .Coordenates{width:100%;padding:0 10px}
+.Services .Service{width:100%;display:inline-block}
+.Services .Service .Name_Service{width:100%;display:inline-block;color:#2d2d2d}
+.Services .Service .DeviceNumber{width:100%;display:inline-block}
+.Services .Service .Dispensador{width:25%;display:inline-block;min-height:100px;text-align:center;padding:2px}
+.escolha-posto .Services .Service.Service-posto .Dispensador{width:initial;display:inline-block;min-height:initial;float:left;text-align:center;padding:2px}
+.PaymentMethods{width:100%;display:block;margin-top:40px;margin-bottom:60px;text-align:center}
+.PaymentMethods .PaymentMethod{display:inline-block;width:50%;float:left;border:solid 1px #fff}
+/*specific-location = posto*/
+.posto.container{background:#fff;padding:10px 0}
+#lista-postos{margin:0;margin-top:115px;position:fixed;width:100%;display:inline-block}
+#lista-postos .escolha-posto{padding:20px;border-top-left-radius:25px;border-top-right-radius:25px;box-shadow:1px -2px 3px 0px #888888}
+.posto .Station{width:100%;display:inline-block;margin:0;padding:10px;background:#f5f5f5}
+.posto .Station .Address{}
+.posto .Station > div{padding:0}
+.posto .Station > div > span{font-weight:700}
+.posto .group-coord-mapa{width:100%;display:block}
+.posto .group-coord-mapa > div{display:inline-block;padding:0;width:initial}
+.posto .group-coord-mapa span{font-weight:700 }
+.posto .group-coord-mapa .ver-mapa{position:relative;display:inline-block;width:100px;padding:5px;color:#fff;margin:5px;font-weight:700;font-size:12px;position:relative;background:#5e5e5e;text-indent:15px;float:right;text-align:center}
+.posto .group-coord-mapa .ver-mapa img{position:absolute;left:10px}
+.posto .Services .Service{position:relative;padding:0;float:left}
+.posto .Services .Service .posto-logo{display:inline-block;position:absolute;top:15px;left:5px;width:20px}
+.posto .Services .Service .posto-logo img{width:100%}
+.posto .Services .Service .Name_Service{font-weight:700;background:rgb(153,153,153);background:linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(255,255,255,1) 80%);color:#fff;margin-bottom:10px}
+.posto .Services .Service .Name_Service .fa{float:right;color:#000;padding:7px}
+.posto .Services .Service .Name_Service span{background:#c7342a;display:inline-block;padding:5px;text-indent:25px}
+.posto .Services .Service .Name_Service span.disponivel{background:transparent;color:#000;position:relative}
+.posto .Services .Service .Name_Service span.indisponivel{background:transparent;color:#000;position:relative}
+.posto .Services .Service .Name_Service span.disponivel:after{content:"";width:10px;height:10px;position:absolute;top:32%;left:10%;background:#14b51b;border-radius:50%}
+.posto .Services .Service .Name_Service span.indisponivel:after{content:"";width:10px;height:10px;position:absolute;top:32%;left:10%;background:#c7342a;border-radius:50%}
+.posto .Services .Service .Dispensadores{display:block;width:100%}
+.posto .Services .Service .Dispensadores.disponivel{display:block}
+.posto .Services .Service .Dispensador .Price{font-weight:700;font-size:12px;color:#000;padding:3px 0}
+.posto .Services .Service .Dispensador .Identifier{border-radius:50%;padding:15px;width:60px;height:60px;margin:0 auto;border:solid 0px #e1e1e1;margin-top:5px}
+.posto .escolha-posto .Services .Service.Service-posto .Dispensador .Identifier{background:#f2f2f2;border-radius:50%;padding:0px;line-height:37px;width:40px;height:40px;margin:0 auto;border:solid 1px #f2f2f2}
+.posto .Services .Service .Dispensador .Identifier img{width:100%}
+.posto .Services .Service .Dispensador .Description{font-size:10px;font-weight:700;color:#000}
+.posto .Services .Service .Dispensador .disponibilidade{width:12px;height:12px;display:inline-block;border-radius:50%}
+.posto .Services .Service .Dispensador .disponibilidade.open{ background:#269e29}
+.posto .Services .Service .Dispensador .disponibilidade.close{background:#c7342a}
+.PaymentMethods .PaymentMethodTitulo{font-weight:700;margin-bottom:10px}
+.PaymentMethods{width:100%;display:block;margin-top:0;margin-bottom:20px;text-align:center;float:left;background:#e1e1e1;padding:20px 0}
+.PaymentMethods .PaymentMethod{border:none}
+.PaymentMethods .PaymentMethod .Method{font-weight:700}
+.button_reserva{display:inline-block;padding:10px 30px;margin:0 2px;border-radius:25px}
+.button_reserva.validar-btn-trad{background:rgb(1,200,209);color:#fff;background: linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%)}
+.button_reserva.cancelar-btn-trad{background:#fff;color:#000;border:solid 1px #a3a3a3}
+.button_reserva.voltarReserva {color:#fff;background: rgb(1,200,209);background: linear-gradient(90deg, rgba(1,200,209,1) 0%, rgba(1,239,172,1) 100%)}
+.button_reserva.cancelarReserva{background:#fff;color:#000;border:solid 1px #a3a3a3}
+.previewReserva{display:table;font-size:16px;font-weight:600;padding:5px 20px;width:100%}
+.previewReserva2{display:table;font-size:16px;font-weight:600;padding:5px 5px;width:100%}
+.previewReserva input{border:none;border-bottom:solid 1px #a3a3a3;text-align:right;margin-right:5px;font-family:Titillium Web}
+.previewReserva b{font-weight:700}
+.previewReserva .line{text-align:center}
+.previewReserva .line .line-preview{display:inline-block;margin-left:5px}
+.previewReserva .line span{color:#c7342a}
+.previewReserva .line.form{text-align:left}
+.previewReserva .line.form .labels{width:60%;display:inline-block}
+.previewReserva .line.form .inputs{width:25%;display:inline-block}
+.previewReserva .line.form .inputs input{width:100%;text-align:center}
+.previewReserva .line.form .inputs input.readonly-red{color:#fff;background:#c7342a;border:solid 2px #c7342a}
+.previewMatriculas{float:left;position:relative;width:100%;display:block;padding:10px 0;text-align:center}
+.previewMatriculas .matricula{display:inline-block;padding:1px 40px;border:solid 1px #000;border-radius:10px}
+.previewReserva .line.form .unidades{width:15%;display:inline-block}
+.previewReserva .line.form .unidades > div{margin-left:5px}
+.previewReserva .line.form .unidades > div.info{position:relative}
+.previewReserva .line.form .unidades > div.info img.info{position:absolute;width:15px;top:25%;left:70%}
+.escolha-posto .posto-nome{font-size:18px;font-weight:600;padding:0 20px;margin-bottom:5px;text-align:center}
+.escolha-posto .Service-posto{padding:0 15px !important;margin-bottom:10px}
+.escola{color:#9a9a9a;padding:0 20px;margin-bottom:5px;font-size:12px;text-align:center}
+
+.services{margin-top:10px}

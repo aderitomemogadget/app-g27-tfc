@@ -1,0 +1,52 @@
+.app-content .reserva {
+	margin:10px;
+	background:#fff;
+	padding:10px 20px;
+}
+
+.app-content .reserva .ReservationNumber {
+	background:linear-gradient(90deg, #999 0%, #fff 80%);
+    color:#fff;
+    text-indent:5px;
+	padding:5px 0px;
+}
+
+.app-content .reserva label {
+	display:inline-block;
+	font-weight:600;
+	margin:0;
+}
+
+.app-content .reserva .cancelar_reserva{
+	width:100%;
+	text-align:right;
+	display:block;
+}
+
+.app-content .reserva .estado_txt {
+	text-align:right;
+	width:100%;
+}
+
+.app-content .container .resumoReserva {
+	background:#e1e1e1;
+	max-width:300px;
+	margin:0 auto;
+	padding:15px 20px;
+	margin-top:95px;
+	border-radius:10px;
+	position:relative;
+	padding-top:35px;
+}
+.app-content .container .resumoReserva img.ok {
+	position:absolute;
+	width:30%;
+	left:35%;
+	top:-15%;
+}
+
+.app-content .container .resumoReserva .Station .StationName {}
+.app-content .container .resumoReserva .Station .Address {padding:0}
+.app-content .container .resumoReserva .Station .TimeTable {padding:0}
+.app-content .container .resumoReserva span{font-weight:700}
+.app-content .container .resumoReserva .reserva-cancelada {padding-top:40px;text-align:center}

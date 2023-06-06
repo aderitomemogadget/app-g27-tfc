@@ -1,0 +1,22 @@
+.homepage-pos {display:block;width:100%;text-align:center;margin-top:0px}
+.homepage-pos .button_reserva {min-width:260px;margin:10px}
+
+.menu_pos{width:80%;text-align:left;display:flex;color:#000;padding:10px 0px;margin:0 2px;margin-bottom:10px;border-bottom:solid 1px #ccc;line-height:30px;margin: 0 auto;}
+
+.definicao_posto {text-align:center;display:block;margin-top:40px}
+.definicao_posto select {display:block;margin:20px auto;padding:5px;background:#fff;width:100%;max-width:220px}
+.definicao_posto > div > span {padding:20px 0;position:relative;display:block;text-align:center;font-weight:600;font-size:25px}
+
+.container-postoPOS {display:block;width:100%;margin-top:0px;padding:20px 60px}
+.container-postoPOS .form {display:block;width:100%;padding:20px;background:#e2e2e2;border-radius:10px}
+.container-postoPOS .form .line {margin-bottom:10px;position:relative;display:inline-block}
+.container-postoPOS .form .line span {margin-bottom:5px;display:inline-block}
+.container-postoPOS .form .line input {width:100%;padding:5px}
+.container-postoPOS .form .line img {float:left;display:inline-block;margin-top:6px;margin-left:5px;width:20px;position:absolute;top:25px;right:-23px}
+.container-postoPOS .form .line select {width:100%;padding:5px;background:#fff}
+.container-postoPOS .form .line select#matricula {min-width:190px}
+.container-postoPOS .form .line .slider:before {bottom:1px}
+.app-content .reserva .ReservationNumber {color:#000}
+
+
+optgroup > option{font-size:12px}

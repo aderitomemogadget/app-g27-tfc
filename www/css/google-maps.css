@@ -1,0 +1,59 @@
+#map {
+  z-index:10;
+}
+
+#floating-panel {
+  background:#2d2d2d;
+  padding:5px;
+  z-index:10;
+}
+
+#floating-panel strong {
+  width:20%;
+}
+
+#floating-panel select {
+  width:80%;
+  float:right;
+  height:24px;
+}
+
+#right-panel{
+  color:#fff !important;
+  background:#2d2d2d !important;
+  margin-top:280px;
+}
+
+#right-panel .adp-placemark{
+  background:#2d2d2d;
+  color:#fff;
+  border:none;
+}
+
+#right-panel .adp-summary {
+  background:#2d2d2d;
+  color:#fff;
+  border:none;
+}
+
+#right-panel .adp-directions{
+  background:#2d2d2d;
+  color:#fff;
+  border:none;
+}
+
+#right-panel .adp-substep .adp-stepicon {
+  background:#fff;
+}
+
+#right-panel .adp-list {
+  background:#2d2d2d;
+  color:#fff;
+  border:none;
+}
+
+#right-panel .adp-list .adp-listsel {
+  background:#c7342a;
+}
+
+#google-maps-link{display: none !important}
