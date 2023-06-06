@@ -28,7 +28,7 @@ function change()
 }
 function login_pin()
 {
-	$("#login").val( $("#indicativo").val()+$("#m_phone").val() );
+	$("#login").val( $("#indicativo_home").val()+$("#m_phone").val() );
 	$("#password").val( $("#PIN1").val()+$("#PIN2").val()+$("#PIN3").val()+$("#PIN4").val() );
 	$("#PIN1").val('');
 	$("#PIN2").val('');
