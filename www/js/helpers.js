@@ -922,7 +922,7 @@ function infoLogin()
 			type:'POST',
 			url:globalUrl+'admin_tfc/logins.php',
 			async:false,
-			data:{'type':'getInfoLogin','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token"),'telemovel':window.localStorage.getItem("telemovel")},
+			data:{'type':'getInfoLogin','dp':(new Date()).getTime(),'token':window.localStorage.getItem("token")},
 			dataType:'json',
 			success:function(data)
 			{
@@ -6096,22 +6096,28 @@ function showInfoReservas()
 	var html = '';
 	$.ajax({
 			type:'POST',
-			url:globalUrl+'admin_tfc/info.php',
+			url:globalUrl+'admin_hiqi2/info.php',
 			async:false,
 			data:{'type':'infoReservas','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
 			dataType:'html',
-			success:function(data)
-			{
-				html += data;
-			},
-			error:function(data)
-			{
-				console.error('erro em infoMatriculas => info.php');
-			}
+			success:function(data){html += data;},
+			error:function(data){console.error('erro em showInfoReservas');}
 		});
-
 	return html;
-
+}
+function apoio_cliente()
+{
+	var html = '';
+	$.ajax({
+			type:'POST',
+			url:globalUrl+'admin_hiqi2/info.php',
+			async:false,
+			data:{'type':'apoio_cliente','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
+			dataType:'html',
+			success:function(data){html += data;},
+			error:function(data){console.error('erro em apoio_cliente');}
+		});
+	return html;
 }
 function showInfoActualizarPagamentos()
 {

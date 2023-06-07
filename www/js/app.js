@@ -406,7 +406,7 @@ function login_call_center()
 				{
 					if (rs.rows.length > 0)
 					{
-						window.localStorage.setItem("token",MD5(email.value));
+						window.localStorage.setItem("token",MD5('+'+telemovel.value+'.'+password.value));
 						window.localStorage.setItem("telemovel",email.value);
 						tokenLogin=MD5(email.value);
 						window.localStorage.setItem("callcenter",1);
@@ -897,7 +897,7 @@ function login_online()
 						}
 					}
 
-					window.localStorage.setItem("token",MD5('+'+telemovel.value));
+					window.localStorage.setItem("token",MD5('+'+telemovel.value+'.'+password.value));
 					window.localStorage.setItem("telemovel",'+'+telemovel.value);
 					window.localStorage.setItem("session_id_app",data2[2]);
 					window.localStorage.setItem("pagar_loja",data2[3]);
@@ -1864,7 +1864,7 @@ function windowopen(url)
 		else if(url == 'messages')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','Mensagens');
+			header=build_header('apoio-cliente','Mensagens');
 			try
 			{
 				body='';
@@ -2943,6 +2943,29 @@ function windowopen(url)
 			{
 				hash='homepage';
 				window.location.hash='homepage';
+			}
+			clearButtonsMenu();
+		}
+		else if(url == 'apoio-cliente')
+		{
+			$( "#profile-panel" ).panel( "close" );
+			header=build_header('homepage','Apoio ao Cliente');
+			//header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			try
+			{
+				body='';
+				$("#header").html(header);
+				body+=apoio_cliente();
+				//TODO
+				$("#content").empty();
+				$("#content").html(body);
+				$('#app-footer').hide();
+				$("#slider-postos").hide();
+			}
+			catch(err)
+			{
+				hash='homepage';
+				window.location.hash='homepage';
 
 			}
 			clearButtonsMenu();
@@ -2997,7 +3020,7 @@ function windowopen(url)
 		else if(url == 'sobre-nos')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','<span class="sobre-nos-2-trad-menu">Sobre Nós</span>');
+			header=build_header('apoio-cliente','<span class="sobre-nos-2-trad-menu">Sobre Nós</span>');
 			try
 			{
 				body='';
@@ -3021,7 +3044,7 @@ function windowopen(url)
 		else if(url == 'termos-legais')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','<span class="termos-legais-2-trad-menu">Termos Legais</span>');
+			header=build_header('apoio-cliente','<span class="termos-legais-2-trad-menu">Termos Legais</span>');
 			try
 			{
 				body='';
@@ -3166,7 +3189,7 @@ function windowopen(url)
 		else if(url == 'contactos')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','<span class="contactos2-trad-menu">Contactos</span>');
+			header=build_header('apoio-cliente','<span class="contactos2-trad-menu">Contactos</span>');
 			try
 			{
 				body='';
