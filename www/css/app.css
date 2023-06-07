@@ -440,7 +440,7 @@ input{height:33px;padding:10px}
 }
 @media screen and (max-width:465px)
 {
-	.app-content .technical-sheet .desc .ref{font-family:'inter_regular',sans-serif;color:#000;padding:10px 0;padding-top:20px;font-size:24px}
+	.app-content .technical-sheet .desc .ref{font-family:'inter_regular',sans-serif;color:#000;padding:10px 0;padding-top:20px;font-size:24px;line-height:20px}
 	.app-content .technical-sheet .img{float:left;width:200px;height:199px}
 	.app-content .technical-sheet .desc{float:left;width:100% ;padding-left:0;padding-right:0}
 }
