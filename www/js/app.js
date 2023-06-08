@@ -1679,7 +1679,7 @@ function windowopen(url)
 		}
 		else if(url == 'home-gestao')
 		{
-			header='<div class="left"></div><div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header='<div class="left"></div><div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				clearSessionStorage();
@@ -1759,7 +1759,7 @@ function windowopen(url)
 		}
 		else if(url == 'group')
 		{
-			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				body='';
@@ -1780,7 +1780,7 @@ function windowopen(url)
 		}
 		else if(url == 'chat')
 		{
-			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				body='';
@@ -2414,7 +2414,7 @@ function windowopen(url)
 		}
 		else if(url == 'navigation')
 		{
-			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				body='';
@@ -2516,14 +2516,14 @@ function windowopen(url)
 			
 			header='<div class="header" id="header" style="margin-top:5px">';
 			header+='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="cancela_reserva();window.location.hash=\'homepage\'"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> Voltar</div>';
-			header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+			header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 			header+='</div>';
 
 
-			//var header='<div class="left_logo"><img src="img/logo.jpg" border="0" class="logo"></div>';
+			//var header='<div class="left_logo"><img src="img/logo.svg" border="0" class="logo"></div>';
 			//header+='<div class="right_back" onclick="cancela_reserva();window.location.hash=\'homepage\'">Voltar <img src="img/next.svg" class="next"></div>';
 
-			//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="cancela_reserva();window.location.hash=\'homepage\'">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+			//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="cancela_reserva();window.location.hash=\'homepage\'">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 			try
 			{
 				body='';
@@ -2561,7 +2561,7 @@ function windowopen(url)
 		{
 			$( "#profile-panel" ).panel( "close" );
 
-			header='<div class="left_logo"><img src="img/logo.jpg" border="0" class="logo"></div>';
+			header='<div class="left_logo"><img src="img/logo.svg" border="0" class="logo"></div>';
 			header+='<div class="right_back" onclick="showPontoAbastecimentoById(\''+window.localStorage.getItem("StationID")+'\')">Carregamentos <img src="img/next.svg" class="next"></div>';
 			try
 			{
@@ -2735,7 +2735,7 @@ function windowopen(url)
 		}
 		else if(url == 'operacao-cancelada')
 		{
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -2771,7 +2771,7 @@ function windowopen(url)
 		}
 		else if(url == 'carregar-saldo')
 		{
-			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				body='';
@@ -2837,7 +2837,7 @@ function windowopen(url)
 		}
 		else if(url == 'ver-saldo')
 		{
-			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right"></div>';
+			header=backButtonByPermission()+'<div class="cent"><img src="img/logo.svg" border="0" class="logo"></div><div class="right"></div>';
 			try
 			{
 				body='';
@@ -2857,7 +2857,7 @@ function windowopen(url)
 		}
 		else if(url == 'info-matriculas')
 		{
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -2880,7 +2880,7 @@ function windowopen(url)
 		}
 		else if(url == 'info-kms')
 		{
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -2903,7 +2903,7 @@ function windowopen(url)
 		}
 		else if(url == 'info-limites')
 		{
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -2927,7 +2927,7 @@ function windowopen(url)
 		else if(url == 'info-reservas')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -2973,7 +2973,7 @@ function windowopen(url)
 		else if(url == 'info-pagamentos')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -3165,7 +3165,7 @@ function windowopen(url)
 		{
 			$( "#profile-panel" ).panel( "close" );
 
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -3289,7 +3289,7 @@ function windowopen(url)
 		else if(url == 'definicoes')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+			header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 			try
 			{
 				body='';
@@ -3330,7 +3330,7 @@ function windowopen(url)
 			else
 			{
 				$( "#profile-panel" ).panel( "close" );
-				//header='<div class="left" style="background-color:#eae7e7"></div><div class="cent" style="background-color:#eae7e7"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right" style="background-color:#eae7e7"></div>';
+				//header='<div class="left" style="background-color:#eae7e7"></div><div class="cent" style="background-color:#eae7e7"><img src="img/logo.svg" border="0" class="logo"></div><div class="right" style="background-color:#eae7e7"></div>';
 				try
 				{
 					body='';
@@ -3578,7 +3578,7 @@ function windowopen(url)
 		else if(url == 'homepage-callcenter')/*Callcenter*/
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header='<div class="left" style="background-color:#eae7e7"></div><div class="cent" style="background-color:#eae7e7"><img src="img/logo.jpg" border="0" class="logo"></div><div class="right" style="background-color:#eae7e7"></div>';
+			header='<div class="left" style="background-color:#eae7e7"></div><div class="cent" style="background-color:#eae7e7"><img src="img/logo.svg" border="0" class="logo"></div><div class="right" style="background-color:#eae7e7"></div>';
 			try
 			{
 				body='';
@@ -3782,7 +3782,7 @@ function windowopen(url)
 
 			/*
 			header='<div class="left back" style="width:7%; background-position:15px 20px;background-color:#fff" onclick="window.location.hash=\'homepage-callcenter\'">'+key_BACK[sLang]+'</div></div><div class="left_logo">';
-			header+='<img src="img/logo.jpg" border="0" class="logo" style="background-color:#fff;float:right;margin-right:20px">';
+			header+='<img src="img/logo.svg" border="0" class="logo" style="background-color:#fff;float:right;margin-right:20px">';
 			header+='</div>';*/
 
 			try
@@ -3914,7 +3914,7 @@ function windowopen(url)
 			$( "#profile-panel" ).panel( "close" );
 			
 
-			header='<div class="right_back" onclick="window.localStorage.removeItem(\'limite_diario\');window.localStorage.removeItem(\'limite_semanal\');window.localStorage.removeItem(\'limite_mensal\');window.location.hash=\'iniciar-pagamento-callcenter\'">'+key_BACK[sLang]+'</div></div><div class="left_logo"><img src="img/logo.jpg" border="0" class="logo"></div>';
+			header='<div class="right_back" onclick="window.localStorage.removeItem(\'limite_diario\');window.localStorage.removeItem(\'limite_semanal\');window.localStorage.removeItem(\'limite_mensal\');window.location.hash=\'iniciar-pagamento-callcenter\'">'+key_BACK[sLang]+'</div></div><div class="left_logo"><img src="img/logo.svg" border="0" class="logo"></div>';
 			try
 			{
 				body='';
@@ -4198,7 +4198,7 @@ function windowopen(url)
 					$("head meta[name=viewport]").remove();
 					$('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />');
 				}
-				header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+				header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 				$("#header").html(header);
 				$('.header2').css('display','block');
 				$('.app-footer').css('display','block');
@@ -4217,7 +4217,7 @@ function windowopen(url)
 					$("head meta[name=viewport]").remove();
 					$('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />');
 				}
-				header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+				header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 				try
 				{
 					clearSessionStorage();
@@ -4880,7 +4880,7 @@ function close_nav()
 	$("#content_mapa").hide();
 	$("#content_iframe").hide();
 
-	header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="window.location.hash=\'homepage\'">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="window.location.hash=\'homepage\'">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	$("#header").html(header);
 }
 function close_nav2()
@@ -4889,7 +4889,7 @@ function close_nav2()
 	$("#content").hide();
 	$("#content_mapa").hide();
 
-	header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+	header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 	$("#header").html(header);
 }
 //Slider postos home
@@ -4900,11 +4900,11 @@ function start_nav2(StationID,latitude,longitude)
 	$("#content_home").hide();
 	$("#content").hide();
 	$("#content_mapa").show();
-	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	
 	//header='<div class="header" id="header" style="margin-top:5px">';
 	header='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="close_nav2()"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_BACK[sLang]+'</div>';
-	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	//header+='</div>';
 
 	$("#header").html(header);
@@ -4918,10 +4918,10 @@ function start_nav5(StationID,latitude,longitude)
 	$("#content_home").hide();
 	$("#content").hide();
 	$("#content_mapa").show();
-	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	//header='<div class="header" id="header" style="margin-top:5px">';
 	header='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="close_nav()"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_BACK[sLang]+'</div>';
-	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	//header+='</div>';
 
 	$("#header").html(header);
@@ -4933,10 +4933,10 @@ function start_nav3(StationID,latitude,longitude)
 	$("#content_home").hide();
 	$("#content").hide();
 	$("#content_mapa").show();
-	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	//header='<div class="header" id="header" style="margin-top:5px">';
 	header='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="close_nav2()"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_BACK[sLang]+'</div>';
-	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	//header+='</div>';
 	$("#header").html(header);
 	setTimeout(function() {start_nav(StationID,latitude,longitude);}, 1000);
@@ -4949,11 +4949,11 @@ function start_nav4(StationID,latitude,longitude)
 	$("#content_home").hide();
 	$("#content").hide();
 	$("#content_mapa").show();
-	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav2()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	
 	//header='<div class="header" id="header" style="margin-top:5px">';
 	header='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="close_nav2()"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_BACK[sLang]+'</div>';
-	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	//header+='</div>';
 
 	$("#header").html(header);
@@ -4968,10 +4968,10 @@ function start_nav6(StationID,latitude,longitude)
 	$("#content").hide();
 	$("#content_mapa").show();
 
-	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.jpg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
+	//header='<div class="left back" style="width:7%;background-position:15px 20px;background-color:#fff;" onclick="close_nav()">'+key_BACK[sLang]+'</div></div><div class="cent" style="line-height:50px; text-align:left;text-indent:10px;background-color:#fff;"><img src="img/logo.svg" border="0" class="logo" style="float:right;margin-right:20px"></div>';
 	//header='<div class="header" id="header" style="margin-top:5px">';
 	header='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="close_nav()"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_BACK[sLang]+'</div>';
-	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	//header+='</div>';
 	$("#header").html(header);
 	setTimeout(function() {start_nav(StationID,latitude,longitude);}, 1000);
@@ -5446,7 +5446,7 @@ function inside_map(url)
 	//"https://maps.google.com/maps?q=10.305385,77.923029&hl=es;z=14&amp;output=embed
 	//url="https://www.google.com/maps/embed/v1/directions?origin=Lisboa&destination=Porto";
 	//window.open(url,'_new');
-	header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+	header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 	$("#header").html(header);
 	$('.header2').css('display','block');
 	$('.app-footer').css('display','block');
@@ -5463,7 +5463,7 @@ function inside_map2(url)
 	$("#content_iframe").show();
 	$("#content_iframe").height(window.innerHeight-100);
 
-	//header='<div class="left"><img src="img/logo.jpg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
+	//header='<div class="left"><img src="img/logo.svg" border="0" class="logo"></div><div class="cent"></div><div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg"></a></div>';
 	//$("#header").html(header);
 	//$('.header2').css('display','block');
 	//$('.app-footer').css('display','block');
@@ -5530,7 +5530,7 @@ function FingerprintisAvailableError2(error)
 function build_header_(hash,titulo)
 {
 	var header;
-	header='<div class="left_logo"><img src="img/logo.jpg" border="0" class="logo"></div>';
+	header='<div class="left_logo"><img src="img/logo.svg" border="0" class="logo"></div>';
 	header+='<div class="right_back" onclick="window.location.hash=\''+hash+'\'">'+titulo+' <img src="img/next.svg" class="next"></div>';
 	return header;
 }
@@ -5540,7 +5540,7 @@ function build_header(hash,titulo)
 	header='<div class="header" id="header" style="margin-top:5px">';
 	header+='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="window.location.hash=\''+hash+'\'"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+titulo+'</div>';
 	header+='<div class="right"><a class="profile-toggle" href="#profile-panel"><img class="img-menu" src="img/menu.svg" style="position:absolute;top:18px;right:20px"></a></div>';
-	//header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.jpg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
+	//header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 	header+='</div>';
 	return header;
 }
