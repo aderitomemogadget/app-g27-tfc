@@ -84,7 +84,7 @@
 									
 									<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
 									<div class="clear"></div>
-									<input type="button" name="bt-login2" value="Profissionais" onmouseup="goto_to_registo2();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
+									<input type="button" name="bt-login2" value="Empresas" onmouseup="goto_to_registo2();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
 									<div class="clear"></div>
 								</div>
 
@@ -180,7 +180,24 @@
 									<div class="recupera-password-form" style="padding:0;width:100%;display:none;z-index:2;position:relative">
 										<div style="font-size:12px;width:100%;margin-top:20px;color:#333333">Para poder alterar a sua password, deve inserir o número de Telemóvel asociado à sua conta.
 										<br><br>Irá receber um código por SMS que deverá inserir no ecran seguinte.</div>
-										<input type="text" name="login" id="m_phone_recupera" placeholder="Telemóvel" style="width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+
+										<div style="width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
+											<select id="m_phone_recupera_prefixo" style="display:inline-block;float:left;width:30%;height:35px;border:0px;background-color:transparent;color:#3ec2cf">
+												<option value="351">351</option>
+												<option value="33">33</option>
+												<option value="34">34</option>
+												<option value="40">40</option>
+												<option value="41">41</option>
+												<option value="48">48</option>
+												<option value="49">49</option>
+												<option value="359">359</option>
+											</select>
+											<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone_recupera" placeholder="Telemóvel" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
+										</div>
+										<div class="clear"></div>
+										<p>
+
+
 										<input type="button" name="bt-login" id="bt-recuperar" value="ENVIAR" onmouseup="recuperar_password2()">
 										<input type="button" name="bt-login" id="bt-recuperar2" value="..LOADING.." style="background:#231f20;color:#fff;display:none">
 										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Voltar</div>
@@ -260,7 +277,7 @@
 
 										<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
 										<div class="clear"></div>
-										<input type="button" name="bt-login2" value="Profissionais" onmouseup="goto_to_registo2();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+										<input type="button" name="bt-login2" value="Empresas" onmouseup="goto_to_registo2();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
 
 										<div class="clear"></div>
 										<div style="font-size:12px;width:100%;margin-top:40px;text-decoration:none;color:#000">Já tem conta HiQi?</div>

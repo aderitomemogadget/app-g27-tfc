@@ -28,13 +28,16 @@ function change()
 }
 function login_pin()
 {
-	$("#login").val( $("#indicativo_home").val()+$("#m_phone").val() );
-	$("#password").val( $("#PIN1").val()+$("#PIN2").val()+$("#PIN3").val()+$("#PIN4").val() );
-	$("#PIN1").val('');
-	$("#PIN2").val('');
-	$("#PIN3").val('');
-	$("#PIN4").val('');
-	login();
+	if($("#PIN1").val() != '' && $("#PIN2").val() != '' && $("#PIN3").val() != '' && $("#PIN4").val() != '' )
+	{
+		$("#login").val( $("#indicativo_home").val()+$("#m_phone").val() );
+		$("#password").val( $("#PIN1").val()+$("#PIN2").val()+$("#PIN3").val()+$("#PIN4").val() );
+		$("#PIN1").val('');
+		$("#PIN2").val('');
+		$("#PIN3").val('');
+		$("#PIN4").val('');
+		login();
+	}
 }
 $("#icon1").on( "dblclick", function(e) {
 	e.preventDefault();
@@ -751,6 +754,7 @@ function recuperar_password2()
 }
 function recuperar_password2_2()
 {
+	var prefixo=document.getElementById('m_phone_recupera_prefixo');
 	var telemovel=document.getElementById('m_phone_recupera');
 
 	$.ajax({
@@ -795,12 +799,13 @@ function validar()
 function validar_2()
 {
 	var telemovel=document.getElementById('m_phone');
+	var prefixo=document.getElementById('m_phone_recupera_prefixo');
 	var nova_password=document.getElementById('nova_password');
 
 	$.ajax({
 		type:'POST',
 		url:globalUrl+'admin_tfc/logins.php',
-		data:{'type':'recuperar_password_validar','dp':(new Date()).getTime(),'telemovel':telemovel.value,'nova_password':nova_password.value },
+		data:{'type':'recuperar_password_validar','dp':(new Date()).getTime(),'telemovel':prefixo.value+telemovel.value,'nova_password':nova_password.value },
 		dataType:'html',
 		success:function(data)
 		{

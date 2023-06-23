@@ -9,7 +9,7 @@
 
 .container-postoPOS {display:block;width:100%;margin-top:0px;padding:20px 60px}
 .container-postoPOS .form {display:block;width:100%;padding:20px;background:#e2e2e2;border-radius:10px}
-.container-postoPOS .form .line {margin-bottom:10px;position:relative;display:inline-block}
+.container-postoPOS .form .line {margin-bottom:10px;position:relative;display:inline-block;width:95%}
 .container-postoPOS .form .line span {margin-bottom:5px;display:inline-block}
 .container-postoPOS .form .line input {width:100%;padding:5px}
 .container-postoPOS .form .line img {float:left;display:inline-block;margin-top:6px;margin-left:5px;width:20px;position:absolute;top:25px;right:-23px}

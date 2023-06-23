@@ -4080,76 +4080,86 @@ function showIniciarPagamento()
 
 function alterarMatricula()
 {
-	var matricula = window.localStorage.getItem("matricula");
-	var professional_diesel = window.localStorage.getItem("professional_diesel");
 	var telemovel = window.localStorage.getItem("backup_indicativo")+window.localStorage.getItem("backup_telemovel_pos");
-
 	$.ajax({
-				type:'POST',
-				url:globalUrl+'admin_tfc/pagamentos.php',
-				async:false,
-				data:{
-					'type':'alterarMatricula',
-					'dp':(new Date()).getTime(),
-					'telemovel':telemovel,
-					'matricula':matricula,
-					'professional_diesel':professional_diesel
-
-				},
-				dataType:'json',
-				success:function(data)
+		type:'POST',
+		url:globalUrl+'admin_hiqi2/pagamentos.php',
+		async:false,
+		data:{
+			'type':'alterarMatricula',
+			'dp':(new Date()).getTime(),
+			'telemovel':telemovel,
+			'token':window.localStorage.getItem("token"),
+			'Customer_Type':window.localStorage.getItem("Customer_Type"),
+			'matricula':window.localStorage.getItem("matricula"),
+			'professional_diesel':window.localStorage.getItem("professional_diesel")
+		},
+		dataType:'json',
+		success:function(data)
+		{
+			var STATUS = data.STATUS;
+			if(STATUS == 'SUCESS')
+			{
+				if(window.plugins)
 				{
-					var STATUS = data.STATUS;
-
-					if(STATUS == 'SUCESS')
+					window.plugins.toast.showWithOptions(
 					{
-						if(window.plugins)
-						{
-							window.plugins.toast.showWithOptions(
-							{
-								message:'Matrícula alterada com sucesso.',
-								duration:"2000",
-								position:"center",
-								styling:{ textSize:20 },
-								addPixelsY:0
-							});
-						}
-						else
-						{
-							alert('Matrícula alterada com sucesso.');
-						}
-
-						window.localStorage.setItem("backup_matricula_pos",window.localStorage.getItem("matricula"));
-
-						setTimeout(function()
-						{
-							window.location.hash = 'iniciar-pagamento-callcenter';
-						},8000);
-					}
-					else
-					{
-						if(window.plugins)
-						{
-							window.plugins.toast.showWithOptions(
-							{
-								message:'Não foi possível alterar a Matrícula.',
-								duration:"2000",
-								position:"center",
-								styling:{ textSize:20 },
-								addPixelsY:0
-							});
-						}
-						else
-						{
-							alert('Não foi possível alterar a Matrícula.');
-						}
-					}
-				},
-				error:function(data)
-				{
-					console.error('erro em alterarMatricula => pagamentos.php');
+						message:'Matrícula alterada com sucesso.',
+						duration:"2000",
+						position:"center",
+						styling:{ textSize:20 },
+						addPixelsY:0
+					});
 				}
-			});
+				else
+				{
+					alert('Matrícula alterada com sucesso.');
+				}
+				window.localStorage.setItem("backup_matricula_pos",window.localStorage.getItem("matricula"));
+				setTimeout(function()
+				{
+					window.location.hash = 'iniciar-pagamento-callcenter';
+				},8000);
+			}
+			else
+			{
+				if(window.plugins)
+				{
+					window.plugins.toast.showWithOptions(
+					{
+						message:STATUS,
+						duration:"2000",
+						position:"center",
+						styling:{ textSize:20 },
+						addPixelsY:0
+					});
+				}
+				else
+				{
+					alert(STATUS);
+				}
+			}
+		},
+		error:function(data)
+		{
+			var msg = 'Erro de comunicações, verifique se está ligado à rede e tente novamente';
+			if(window.plugins)
+			{
+				window.plugins.toast.showWithOptions(
+				{
+					message:msg,
+					duration:"2000",
+					position:"center",
+					styling:{ textSize:20 },
+					addPixelsY:0
+				});
+			}
+			else
+			{
+				alert(msg);
+			}
+		}
+	});
 }
 
 function criarMatricula()
@@ -4638,7 +4648,7 @@ function criarCartao()
 	}
 	else
 	{
-		if(limite_diario <= 0 || limite_diario || null)
+		if(limite_diario <= 0 || limite_diario == null)
 		{
 			if(window.plugins)
 			{
