@@ -3070,6 +3070,54 @@ function windowopen(url)
 			}
 			clearButtonsMenu();
 		}
+		else if(url == 'politica-privacidade')
+		{
+			$( "#profile-panel" ).panel( "close" );
+			header=build_header('homepage','<span class="">Política de privacidade</span>');
+			try
+			{
+				body='';
+				$("#header").html(header);
+				body+=showInfoPoliticaPrivacidade();
+				//TODO
+				$("#content").empty();
+				$("#content").html(body);
+
+				$('#app-footer').hide();
+				$("#slider-postos").hide();
+			}
+			catch(err)
+			{
+				hash='homepage';
+				window.location.hash='homepage';
+
+			}
+			clearButtonsMenu();
+		}
+		else if(url == 'rgpd')
+		{
+			$( "#profile-panel" ).panel( "close" );
+			header=build_header('homepage','<span class="">RGPD</span>');
+			try
+			{
+				body='';
+				$("#header").html(header);
+				body+=showInfoRGPD();
+				//TODO
+				$("#content").empty();
+				$("#content").html(body);
+
+				$('#app-footer').hide();
+				$("#slider-postos").hide();
+			}
+			catch(err)
+			{
+				hash='homepage';
+				window.location.hash='homepage';
+
+			}
+			clearButtonsMenu();
+		}
 		else if(url == 'termos-legais-callcenter')
 		{
 			$( "#profile-panel" ).panel( "close" );

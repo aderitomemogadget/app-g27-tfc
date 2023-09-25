@@ -6227,6 +6227,48 @@ function showInfoTermosLegais()
 	return html;
 
 }
+function showInfoPoliticaPrivacidade()
+{
+	if(window.localStorage.getItem("Cache_PoliticaPrivacidade")!="")return window.localStorage.getItem("Cache_PoliticaPrivacidade");
+	var html = '';
+	$.ajax({
+			type:'POST',
+			url:globalUrl+'admin_tfc/info.php',
+			async:false,
+			data:{'type':'infoPoliticaPrivacidade','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
+			dataType:'html',
+			success:function(data)
+			{
+				html += data;
+			},
+			error:function(data)
+			{
+				console.error('erro em infoTermosLegais => info.php');
+			}
+		});
+	window.localStorage.setItem("Cache_PoliticaPrivacidade",html);
+	return html;
+}
+function showInfoRGPD()
+{
+	var html = '';
+	$.ajax({
+			type:'POST',
+			url:globalUrl+'admin_tfc/info.php',
+			async:false,
+			data:{'type':'infoRGPD','dp':(new Date()).getTime(),telemovel:window.localStorage.getItem("telemovel"),'token':window.localStorage.getItem("token")},
+			dataType:'html',
+			success:function(data)
+			{
+				html += data;
+			},
+			error:function(data)
+			{
+				console.error('erro em infoTermosLegais => info.php');
+			}
+		});
+	return html;
+}
 function showMudarPassword()
 {
 	var html = '';

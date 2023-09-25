@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="80" id="pt.g27tfc.app" version="2.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget android-versionCode="80" id="pt.g27tfc.app" version="2.2.8" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>TFC</name>
     <description>TFC</description>
     <author email="comercial@memogadget.com" href="http://www.memogadget.com/">Memogadget</author>
