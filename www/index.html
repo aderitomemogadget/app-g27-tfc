@@ -76,15 +76,15 @@
 								<div style="width:100%;text-align:center;padding-top:25%"><img style="height:16%;max-width:288px;padding:15px 30px 15px 30px" src="img/logo_w_txt.svg" border="0" class="logo"></div>
 
 								<div style="width:100%;text-align:center;padding:0px;margin-top:5%">
-									<div style="font-size:18px;color:#fff;width:100%;height:15px;line-height:15px;text-align:center;font-weight:400">Já tem uma conta HiQi?</div>
-									<input type="button" value="Entrar" onmouseup="goto_to_login();" style="background:#ffffff;border-color:#ffffff;color:#3ec2cf;margin:0px;margin-top:15px;height:46px;width:257px">
+									<div style="font-size:18px;color:#fff;width:100%;height:15px;line-height:15px;text-align:center;font-weight:400">Already have a TFC account?</div>
+									<input type="button" value="Enter" onmouseup="goto_to_login();" style="background:#ffffff;border-color:#ffffff;color:#3ec2cf;margin:0px;margin-top:15px;height:46px;width:257px">
 
 									<div style="font-size:18px;color:#fff;width:100%;height:21px;text-align:center;font-weight:400;margin-top:8%">Not yet a HiQi customer?</div>
 									<div style="font-size:18px;color:#fff;width:100%;height:21px;text-align:center;font-weight:400">Sign up:</div>
 									
-									<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
+									<input type="button" name="bt-login1" value="Private" onmouseup="goto_to_registo1();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
 									<div class="clear"></div>
-									<input type="button" name="bt-login2" value="Empresas" onmouseup="goto_to_registo2();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
+									<input type="button" name="bt-login2" value="Companies" onmouseup="goto_to_registo2();" style="background:transparent;border:1px solid #fff;color:#fff;height:46px;width:257px;margin:0px">
 									<div class="clear"></div>
 								</div>
 
@@ -127,7 +127,7 @@
 							<div style="margin:0 auto;border:solid 5px #fff;background-color:#fff;width:90px;height:90px;border-radius:50%;margin-top:-50px"><img id="icon1" style="width:100%" src="img/icon1.png" border="0"></div>
 
 							<div id="fundo_branco" style="padding:30px;background-color:#ffffff;margin-top:-50px;overflow:hidden;">
-								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Efetue o seu login</div>
+								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Log in</div>
 								<div style="max-width:350px;width:100%;margin:0 auto;text-align:center;padding:15px 30px 15px 30px;border-radius:12px;margin-top:0px">
 									
 
@@ -155,7 +155,7 @@
 														<option value="49">49</option>
 														<option value="359">359</option>
 													</select>
-													<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone" placeholder="Telemovel" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
+													<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone" placeholder="Phone" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
 												</div>
 												<div style="position:relative;width:180px;margin:0 auto;margin-bottom:5px">
 													<input pattern="[0-9]*" inputmode="decimal" onkeyup="$('#PIN2').focus()" type="password" name="PIN1" id="PIN1" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
@@ -163,18 +163,18 @@
 													<input pattern="[0-9]*" inputmode="decimal" onkeyup="$('#PIN4').focus()" type="password" name="PIN3" id="PIN3" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
 													<input pattern="[0-9]*" inputmode="decimal" onkeyup="login_pin()" type="password" name="PIN4" id="PIN4" style="text-align:center;margin-right:5px;width:40px;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6">
 												</div>
-												<input type="button" name="bt-login" id="bt-login" value="Entrar" onmouseup="login_pin()">
+												<input type="button" name="bt-login" id="bt-login" value="Enter" onmouseup="login_pin()">
 												<input type="image" src="img/fingerprint.png" name="bt-touchId" id="bt-touchId" value="touchId" onclick="le_dados()" style="margin:0 auto;border:0;width:50px;float:left;display:none;position: absolute;right: -50px;top: 80px;">
 											</div>									
 
 
 										<input type="button" name="bt-login" id="bt-login2" value="..LOADING.." style="background:#231f20;color:#666;display:none">
 										<div class="clear"></div>
-										<div style="font-size:12px;width:100%;margin-top:5px"><a onmouseup="recuperar_password();" style="text-decoration:none;color:#3ec2cf">Recuperar PIN</a></div>
+										<div style="font-size:12px;width:100%;margin-top:5px"><a onmouseup="recuperar_password();" style="text-decoration:none;color:#3ec2cf">Recover PIN</a></div>
 										<div class="clear"></div>
 										<div style="font-size:12px;width:100%;margin-top:40px;text-decoration:none;color:#000">Not yet a TFC customer?</div>
 										<div class="clear"></div>
-										<input type="button" name="bt-login" value="Registe-se agora" onmouseup="pagina_gegisto();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+										<input type="button" name="bt-login" value="Register now" onmouseup="pagina_gegisto();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
 
 									</div>
 									
@@ -196,15 +196,15 @@
 												<option value="49">49</option>
 												<option value="359">359</option>
 											</select>
-											<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone_recupera" placeholder="Telemóvel" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
+											<input type="text" pattern="[0-9]*" inputmode="decimal" name="m_phone" id="m_phone_recupera" placeholder="Phone" style="width:55%;float:left;border:0px;margin:0;background-color:transparent;color:#000">
 										</div>
 										<div class="clear"></div>
 										<p>
 
 
-										<input type="button" name="bt-login" id="bt-recuperar" value="ENVIAR" onmouseup="recuperar_password2()">
+										<input type="button" name="bt-login" id="bt-recuperar" value="SEND" onmouseup="recuperar_password2()">
 										<input type="button" name="bt-login" id="bt-recuperar2" value="..LOADING.." style="background:#231f20;color:#fff;display:none">
-										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Voltar</div>
+										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Back</div>
 										<div class="clear"></div>
 										<div class="clear"></div>
 									</div>
@@ -214,7 +214,7 @@
 										<div style="position:relative"><input type="password" name="password" id="nova_password" placeholder="Password" style="padding-right:48px;width:100%;float:left;border:solid 1px #d6d6d6;border-radius:10px;background-color:#f6f6f6"></div>
 										<input type="button" name="bt-login" id='bt-validar' value="VALIDAR NOVO CODIGO" onmouseup="validar()">										
 										<input type="button" name="bt-login" id="bt-validar2" value="..LOADING.." style="background:#231f20;color:#666;display:none">
-										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Voltar</div>								
+										<div class="button_reserva cancelar-btn-trad" style="width:100%;" onclick="voltar_ao_login()">Back</div>								
 										<div class="clear"></div>
 									</div>
 
@@ -275,13 +275,13 @@
 							<div style="margin:0 auto;border:solid 5px #fff;background-color:#fff;width:90px;height:90px;border-radius:50%;margin-top:-50px"><img id="icon1" style="width:100%" src="img/icon1.png" border="0"></div>
 
 							<div id="fundo_branco2" style="padding:30px;background-color:#ffffff;margin-top:-50px;overflow:hidden;">
-								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Efetue o seu registo</div>
+								<div style="width:100%;color:#333333;text-align:center;font-size:16px;font-weight:400;margin-top:30px">Register</div>
 								<div style="max-width:350px;width:100%;margin:0 auto;text-align:center;padding:15px 30px 15px 30px;border-radius:12px;margin-top:0px">
 									<div class="login-form" style="padding:0;width:100%;">
 
-										<input type="button" name="bt-login1" value="Particulares" onmouseup="goto_to_registo1();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+										<input type="button" name="bt-login1" value="Private" onmouseup="goto_to_registo1();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
 										<div class="clear"></div>
-										<input type="button" name="bt-login2" value="Empresas" onmouseup="goto_to_registo2();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
+										<input type="button" name="bt-login2" value="Companies" onmouseup="goto_to_registo2();" style="background:#ffffff;border-color:#3ec2cf;color:#3ec2cf;font-size:14px">
 
 										<div class="clear"></div>
 										<div style="font-size:12px;width:100%;margin-top:40px;text-decoration:none;color:#000">Already have a TFC account?</div>
