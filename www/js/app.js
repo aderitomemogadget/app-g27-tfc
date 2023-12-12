@@ -1275,6 +1275,7 @@ function windowopen(url)
 				cell='';
 				cell+= '<div style="height:20px;background:#fff">&nbsp;</div>';
 				cell += '<div class="content" style="padding:20px;margin-top:-10px;background:#fff;box-shadow:1px 0px 1px 0px #ccc; padding-top:20px">';
+				
 				cell += '<div class="product" style="min-height:45px" onclick="change_lang(\'pt\')">';
 				cell += '<div class="desc">';
 				cell += '<div class="ref">Português</div>';
@@ -1282,6 +1283,7 @@ function windowopen(url)
 				cell += '<div class="img" style="text-align:right;">'+(sLang == 'pt' ? '<img src="img/visto2.png" border="0" style="width:15px;height:15px;margin-top:15px"> ' :'<img src="img/go.svg" border="0" style="width:30px">')+'</div>';
 				cell += '<div class="clear"></div>';
 				cell += '</div>';
+
 				cell += '<div class="product" style="min-height:45px" onclick="change_lang(\'es\')">';
 				cell += '<div class="desc">';
 				cell += '<div class="ref">Espanhol</div>';
@@ -1289,6 +1291,15 @@ function windowopen(url)
 				cell += '<div class="img" style="text-align:right;">'+(sLang == 'es' ? '<img src="img/visto2.png" border="0" style="width:15px;height:15px;margin-top:15px"> ' :'<img src="img/go.svg" border="0" style="width:30px">')+'</div>';
 				cell += '<div class="clear"></div>';
 				cell += '</div>';
+
+				cell += '<div class="product" style="min-height:45px" onclick="change_lang(\'en\')">';
+				cell += '<div class="desc">';
+				cell += '<div class="ref">English</div>';
+				cell += '</div>';
+				cell += '<div class="img" style="text-align:right;">'+(sLang == 'en' ? '<img src="img/visto2.png" border="0" style="width:15px;height:15px;margin-top:15px"> ' :'<img src="img/go.svg" border="0" style="width:30px">')+'</div>';
+				cell += '<div class="clear"></div>';
+				cell += '</div>';
+
 				cell += '</div>';
 				$("#header").html(header);
 				$('#content').html(cell);
