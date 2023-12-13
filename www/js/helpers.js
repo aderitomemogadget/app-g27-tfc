@@ -1155,7 +1155,11 @@ function showSliderPostos(e,vpw)
 			dataType:'html',
 			success:function(data)
 			{
-				html = '<div id="show-all-postos" style="display:inline-block;width:50%;float:left"><div class="ver-mapa" style="margin-left:20px" onclick="window.location.hash=\'\';window.location.hash=\'location\'">Ver lista de postos</div></div>';
+				
+				if(sLang=='en')html = '<div id="show-all-postos" style="display:inline-block;width:50%;float:left"><div class="ver-mapa" style="margin-left:20px" onclick="window.location.hash=\'\';window.location.hash=\'location\'">List all stations</div></div>';
+				else if(sLang=='en')html = '<div id="show-all-postos" style="display:inline-block;width:50%;float:left"><div class="ver-mapa" style="margin-left:20px" onclick="window.location.hash=\'\';window.location.hash=\'location\'">Ver lista de puestos</div></div>';
+				else html = '<div id="show-all-postos" style="display:inline-block;width:50%;float:left"><div class="ver-mapa" style="margin-left:20px" onclick="window.location.hash=\'\';window.location.hash=\'location\'">Ver lista de postos</div></div>';
+				
 				html += '<div class="horizontal-scroll-wrapper3 squares" style="height:'+vpw+'px">';
 				html += data;
 				html += '</div>';
