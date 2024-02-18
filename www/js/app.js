@@ -1955,7 +1955,7 @@ function windowopen(url)
 		else if(url == 'condutores')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','Condutores');
+			header=build_header('homepage',key_condutores[sLang]);
 			try
 			{
 				body='';
@@ -1979,7 +1979,7 @@ function windowopen(url)
 		}
 		else if(url == 'condutores-edita')
 		{
-			header=build_header('condutores','Condutores');
+			header=build_header('condutores',key_condutores[sLang]);
 			var Condutor_ID=window.localStorage.getItem("Condutor_ID");
 			try
 			{
@@ -2004,7 +2004,7 @@ function windowopen(url)
 		}
 		else if(url == 'condutores-add')
 		{
-			header=build_header('condutores','Condutores');
+			header=build_header('condutores',key_condutores[sLang]);
 			try
 			{
 				body='';
@@ -2026,7 +2026,7 @@ function windowopen(url)
 		}
 		else if(url == 'condutores-remove')
 		{
-			header=build_header('condutores','Condutores');
+			header=build_header('condutores',key_condutores[sLang]);
 			var Condutor_ID=window.localStorage.getItem("Condutor_ID");
 			try
 			{
@@ -2049,7 +2049,7 @@ function windowopen(url)
 		}
 		else if(url == 'veiculos-add')
 		{
-			header=build_header('veiculos','Veículos');
+			header=build_header('veiculos',key_veiculos[sLang]);
 			try
 			{
 				body='';
@@ -2072,7 +2072,7 @@ function windowopen(url)
 		}
 		else if(url == 'veiculos-add2')
 		{
-			header=build_header('veiculos','Veículos');
+			header=build_header('veiculos',key_veiculos[sLang]);
 			try
 			{
 				body='';
@@ -2095,7 +2095,7 @@ function windowopen(url)
 		}
 		else if(url == 'veiculos-edita')
 		{
-			header=build_header('veiculos','Veículos');
+			header=build_header('veiculos',key_veiculos[sLang]);
 			var Licence_Plate=window.localStorage.getItem("Licence_Plate");
 			try
 			{
@@ -2119,7 +2119,7 @@ function windowopen(url)
 		}
 		else if(url == 'veiculos-remove')
 		{
-			header=build_header('veiculos','Veículos');
+			header=build_header('veiculos',key_veiculos[sLang]);
 			var Licence_Plate=window.localStorage.getItem("Licence_Plate");
 			try
 			{
@@ -2144,7 +2144,7 @@ function windowopen(url)
 		else if(url == 'veiculos')
 		{
 			$( "#profile-panel" ).panel( "close" );
-			header=build_header('homepage','Veículos');
+			header=build_header('homepage',key_veiculos[sLang]);
 			try
 			{
 				body='';
@@ -2531,7 +2531,7 @@ function windowopen(url)
 			var header;
 			
 			header='<div class="header" id="header" style="margin-top:5px">';
-			header+='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="cancela_reserva();window.location.hash=\'homepage\'"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> Voltar</div>';
+			header+='<div style="background-color:#fff;white-space:nowrap;line-height:20px;margin:20px" onclick="cancela_reserva();window.location.hash=\'homepage\'"><img style="transform: rotate(90deg);width:17px;float:left;margin-right:5px;margin-top:6px;color:#3cc3ce" src="img/next.svg" class="next"> '+key_btn_voltar[sLang]+'</div>';
 			header+='<div class="cent" style="line-height:50px;text-align:left;text-indent:10px;background-color:#fff"><img src="img/logo.svg" class="logo" style="right:20px;position:absolute;top:4px" border="0"></div>';
 			header+='</div>';
 

@@ -957,8 +957,9 @@ key_erro['fr'] = '';
 key_erro['de'] = '';
 key_erro['nl'] = '';
 
-key_btn_voltar['pt'] = 'VOLTAR';
-key_btn_voltar['es'] = 'VUELVE';
+key_btn_voltar['pt'] = 'Voltar';
+key_btn_voltar['es'] = 'Vuelve';
+key_btn_voltar['en'] = 'Back';
 key_btn_voltar['fr'] = '';
 key_btn_voltar['de'] = '';
 key_btn_voltar['nl'] = '';
@@ -1457,12 +1458,14 @@ key_pagamentos_pendentes['nl'] = '';
 
 key_veiculos['pt'] = 'Veículos';
 key_veiculos['es'] = 'Veiculos';
+key_veiculos['en'] = 'Vehicles';
 key_veiculos['fr'] = '';
 key_veiculos['de'] = '';
 key_veiculos['nl'] = '';
 
 key_condutores['pt'] = 'Condutores';
 key_condutores['es'] = 'Condutores';
+key_condutores['en'] = 'Drivers';
 key_condutores['fr'] = '';
 key_condutores['de'] = '';
 key_condutores['nl'] = '';
